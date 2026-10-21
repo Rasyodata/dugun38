@@ -13,7 +13,7 @@ ENV DATABASE_URL="file:/app/packages/db/prisma/dev.db"
 
 # --- bağımlılıklar ---
 FROM base AS deps
-COPY pnpm-workspace.yaml package.json .npmrc ./
+COPY pnpm-workspace.yaml package.json .npmrc pnpm-lock.yaml ./
 COPY packages/core/package.json packages/core/
 COPY packages/db/package.json packages/db/
 COPY apps/web/package.json apps/web/

@@ -1,13 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { CATEGORIES, CATEGORY_BY_SLUG, DISTRICTS } from "@dugun38/core";
+import { CATEGORY_BY_SLUG, DISTRICTS } from "@dugun38/core";
 import { searchFirms } from "@/lib/firms";
 import { FirmCard } from "@/components/FirmCard";
-
-export function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ category: c.slug }));
-}
 
 export async function generateMetadata({ params }: PageProps<"/kategori/[category]">): Promise<Metadata> {
   const { category } = await params;

@@ -1,14 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { CATEGORIES, CATEGORY_BY_SLUG, DISTRICT_BY_SLUG, DISTRICTS, formatTRY } from "@dugun38/core";
+import { CATEGORY_BY_SLUG, DISTRICT_BY_SLUG, DISTRICTS, formatTRY } from "@dugun38/core";
 import { searchFirms } from "@/lib/firms";
 import { FirmCard } from "@/components/FirmCard";
 
-// 20 kategori × 16 ilçe = 320 SEO sayfası
-export function generateStaticParams() {
-  return CATEGORIES.flatMap((c) => DISTRICTS.map((d) => ({ category: c.slug, district: d.slug })));
-}
+// Not: Sayfalar istek anında sunucuda render edilir (dinamik). Derleme anı
+// ön-üretimi (generateStaticParams) kaldırıldı — build hafif, SEO için tam HTML +
+// metadata yine üretilir, 320 URL sitemap.xml'de listelenir.
 
 export async function generateMetadata({ params }: PageProps<"/kategori/[category]/[district]">): Promise<Metadata> {
   const { category, district } = await params;
