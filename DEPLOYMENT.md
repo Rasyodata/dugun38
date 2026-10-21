@@ -24,7 +24,31 @@ INSECURE_COOKIES=1 pnpm exec next start -p 3401 -H 0.0.0.0 &
 
 ---
 
-## 1. Docker (kendi sunucunuz / VPS) — önerilen kalıcı yol
+## ⭐ Render (önerilen kalıcı yayın — repo hazır)
+
+Kod GitHub'da: **https://github.com/Rasyodata/dugun38** (private). `render.yaml` Blueprint hazır.
+
+**Tek-tık deploy:**
+1. Şuraya git (Render'a giriş yapmış olun): **https://render.com/deploy?repo=https://github.com/Rasyodata/dugun38**
+2. Render GitHub uygulamasına `Rasyodata/dugun38` deposuna erişim izni verin.
+3. `render.yaml` otomatik algılanır → **Apply** / **Create** deyin.
+4. İlk build ~5-8 dk sürer. Bitince `https://dugun38.onrender.com` (benzeri) adresiniz hazır.
+
+**Ya da manuel:** Render Dashboard → **New → Blueprint** → `Rasyodata/dugun38` seç → Apply.
+
+**Güncelleme:** Kodu değiştirip `git push` yapın → Render otomatik yeniden yayınlar (`autoDeploy: true`).
+Bu makineden push: `git push` (remote `origin` ayarlı).
+
+**Env (render.yaml'de hazır, Dashboard'dan değiştirilebilir):**
+- `SEED_ON_BOOT=1` → ilk açılışta demo veriyle doldurur. Gerçek veri girince **`0`** yapın.
+- `ALLOW_DEMO_LOGIN=1` → şifresiz demo giriş (sunum için). Tam canlıda **kaldırın/`0`**.
+
+**Veri kalıcılığı:** Free plan diski geçicidir (her yeniden başlatmada SQLite sıfırlanır → `SEED_ON_BOOT=1` ile demo verisi geri gelir).
+Kalıcı veri için: `render.yaml`'de `plan: starter` yapıp `disk:` bloğunu açın (aylık ücretli), ya da PostgreSQL'e geçin (bkz. Vercel bölümü — tek satır provider değişikliği).
+
+---
+
+## 1. Docker (kendi sunucunuz / VPS) — alternatif kalıcı yol
 
 Tek komutla ayağa kalkar, SQLite verisi kalıcı volüme yazılır:
 
