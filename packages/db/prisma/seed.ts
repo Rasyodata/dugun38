@@ -9,9 +9,11 @@ import {
 const prisma = new PrismaClient();
 
 function slugify(s: string): string {
-  const map: Record<string, string> = { ç: "c", ğ: "g", ı: "i", ö: "o", ş: "s", ü: "u", İ: "i" };
+  const map: Record<string, string> = {
+    ç: "c", Ç: "c", ğ: "g", Ğ: "g", ı: "i", İ: "i", ö: "o", Ö: "o", ş: "s", Ş: "s", ü: "u", Ü: "u",
+  };
   return s
-    .replace(/[çğıöşüİ]/g, (c) => map[c] ?? c)
+    .replace(/[çÇğĞıİöÖşŞüÜ]/g, (c) => map[c] ?? c)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "");
@@ -41,14 +43,40 @@ interface FirmSeed {
   ratingCount: number;
 }
 
+// Gerçek Kayseri düğün/davet mekanları (kaynak: dugun.com Kayseri listeleri).
+// Kapasite/fiyat kısmen dugun.com verisi, kısmen ilçe ortalamalarından tahmin.
 const FIRMS: FirmSeed[] = [
-  { business: "Hayal Evim Event Garden", category: "kir-dugunu", districts: ["melikgazi", "talas"], capacity: 700, pricePerGuest: 850, about: "Erciyes manzaralı bahçede kır düğünü ve kına organizasyonu.", showcase: true, rating: 4.8, ratingCount: 96 },
-  { business: "My Berra Düğün ve Etkinlik Merkezi", category: "dugun-salonu", districts: ["kocasinan"], capacity: 600, pricePerGuest: 800, about: "Şehir merkezinde modern düğün salonu, profesyonel ekip.", showcase: true, rating: 4.6, ratingCount: 142 },
-  { business: "Tulpar Binicilik & Davet", category: "kir-dugunu", districts: ["kocasinan", "incesu"], capacity: 900, pricePerGuest: 780, about: "Doğayla iç içe at çiftliğinde eşsiz düğün deneyimi.", rating: 4.7, ratingCount: 58 },
-  { business: "Friesian Garden", category: "kir-dugunu", districts: ["talas"], capacity: 650, pricePerGuest: 720, about: "Talas'ta butik kır düğünü bahçesi.", rating: 4.5, ratingCount: 41 },
-  { business: "Milena Düğün Salonu", category: "dugun-salonu", districts: ["kocasinan", "melikgazi"], capacity: 550, pricePerGuest: 760, about: "Ferah salon, zengin menü seçenekleri.", rating: 4.3, ratingCount: 77 },
-  { business: "Erciyes Binicilik Balo & Davet Salonu", category: "dugun-salonu", districts: ["melikgazi"], capacity: 800, pricePerGuest: 790, about: "163 mutlu çiftin tercihi balo ve davet salonu.", showcase: true, rating: 4.9, ratingCount: 163 },
-  { business: "Develi Bağ Evi Kır Düğünü", category: "kir-dugunu", districts: ["develi", "yahyali"], capacity: 400, pricePerGuest: 600, about: "Develi'de bağ evinde sade ve samimi düğün.", rating: 4.4, ratingCount: 19 },
+  // --- Mekanlar (gerçek) ---
+  { business: "Erciyes Binicilik Balo & Davet Salonu", category: "kir-dugunu", districts: ["melikgazi"], capacity: 800, pricePerGuest: 950, about: "Hisarcık'ta binicilik tesisi içinde, Erciyes manzaralı geniş kır bahçesi ve balo salonu. Doğal çim alan ve açık hava nikahı.", showcase: true, rating: 4.9, ratingCount: 163 },
+  { business: "İdeal Moonlight", category: "kir-dugunu", districts: ["melikgazi"], capacity: 1500, pricePerGuest: 950, about: "Büyük kapasiteli, modern aydınlatmalı davet mekanı. Hem kır hem salon konseptinde kalabalık düğünler.", showcase: true, rating: 4.3, ratingCount: 337 },
+  { business: "Diva Premium", category: "dugun-salonu", districts: ["talas"], capacity: 600, pricePerGuest: 1000, about: "Premium dekorlu, çok yüksek puanlı kapalı düğün salonu. Kaliteli servis ve şık atmosfer.", showcase: true, rating: 4.9, ratingCount: 119 },
+  { business: "Hayal Evim Event Garden", category: "kir-dugunu", districts: ["melikgazi"], capacity: 250, pricePerGuest: 500, about: "Yeşillikler içinde butik ölçekli şık bir kır düğünü bahçesi. Samimi, küçük/orta ölçekli davetler.", showcase: true, rating: 4.9, ratingCount: 22 },
+  { business: "My Berra Düğün ve Etkinlik Merkezi", category: "kir-dugunu", districts: ["melikgazi", "kocasinan"], capacity: 1200, pricePerGuest: 800, about: "Hisarcık'ta geniş kır bahçesi ve etkinlik alanı. Açık hava düğün ve davetler için büyük kapasite.", rating: 4.8, ratingCount: 48 },
+  { business: "Milena Düğün Salonu", category: "dugun-salonu", districts: ["kocasinan"], capacity: 600, pricePerGuest: 800, about: "Kocasinan'da modern dekorlu, yüksek puanlı kapalı düğün salonu. Orta-büyük ölçekli düğünler.", rating: 4.9, ratingCount: 34 },
+  { business: "Tulpar Binicilik", category: "kir-dugunu", districts: ["kocasinan", "incesu"], capacity: 1800, pricePerGuest: 600, about: "Binicilik tesisi içinde doğayla iç içe geniş kır düğünü alanı. Atlı konsept, çok büyük açık bahçe.", rating: 4.9, ratingCount: 24 },
+  { business: "Friesian", category: "kir-dugunu", districts: ["talas"], capacity: 1000, pricePerGuest: 700, about: "Talas'ta doğal güzellikler içinde geniş kır düğünü alanı. Binicilik temalı, ferah açık bahçe.", rating: 4.9, ratingCount: 32 },
+  { business: "Wyndham Grand Kayseri", category: "otel-dugunu", districts: ["kocasinan"], capacity: 850, pricePerGuest: 980, about: "Gün ışığı alan yüksek tavanlı balo salonuyla beş yıldızlı otel düğünü. Yemekli ve kokteyl hizmeti.", showcase: true, rating: 4.5, ratingCount: 24 },
+  { business: "Hilton Kayseri", category: "otel-dugunu", districts: ["melikgazi"], capacity: 600, pricePerGuest: 850, about: "Erciyes ve Kayseri Kalesi manzaralı teras ve balo salonu. Şehir merkezinde profesyonel servis.", rating: 4.5, ratingCount: 18 },
+  { business: "Kervansaray Kır Mekanı", category: "kir-dugunu", districts: ["incesu"], capacity: 1200, pricePerGuest: 1140, about: "Tarihi kervansaray avlusunda çim üzeri masalar ve dans alanıyla eşsiz kır düğünü. Açık hava nikahı.", rating: 4.6, ratingCount: 19 },
+  { business: "Flamingo Garden Davet", category: "kir-dugunu", districts: ["melikgazi", "kocasinan"], capacity: 900, pricePerGuest: 780, about: "Flamingo temalı peyzajı, havuz başı ve geniş kır bahçesiyle öne çıkan davet mekanı.", showcase: true, rating: 4.7, ratingCount: 41 },
+  { business: "Sadabad Gold", category: "dugun-salonu", districts: ["kocasinan"], capacity: 1000, pricePerGuest: 750, about: "Geniş kapasiteli, ışıl ışıl dekorlu balo salonu. Kalabalık düğün ve davetler için ferah kapalı mekan.", rating: 4.9, ratingCount: 18 },
+  { business: "Dubai Palace & Terrace", category: "kir-dugunu", districts: ["kocasinan"], capacity: 1000, pricePerGuest: 690, about: "Teras ve açık bahçe konseptiyle geniş davet mekanı. Kır düğünü ve kokteyl organizasyonları.", rating: 4.9, ratingCount: 16 },
+  { business: "Armonia Deluxe", category: "dugun-salonu", districts: ["talas"], capacity: 1200, pricePerGuest: 700, about: "Geniş kapasiteli deluxe balo salonu. Büyük düğün ve davetlere uygun ferah iç mekan.", rating: 4.6, ratingCount: 14 },
+  { business: "Dorse Düğün Salonu", category: "dugun-salonu", districts: ["melikgazi"], capacity: 875, pricePerGuest: 750, about: "Ferah kapalı balo salonu. Modern iç tasarımı ve servis kalitesiyle şehir içi düğün mekanı.", rating: 4.8, ratingCount: 29 },
+  { business: "Alice Palazzo Balo Salonu", category: "dugun-salonu", districts: ["kocasinan"], capacity: 625, pricePerGuest: 780, about: "Saray konseptli dekoruyla dikkat çeken kapalı düğün ve etkinlik salonu. Orta-büyük ölçekli davetler.", rating: 4.6, ratingCount: 14 },
+  { business: "Florya Deluxe Düğün Salonu", category: "dugun-salonu", districts: ["kocasinan"], capacity: 700, pricePerGuest: 800, about: "Deluxe iç tasarımlı kapalı balo salonu. Yüksek memnuniyet ve orta-büyük kapasite.", rating: 4.7, ratingCount: 14 },
+  { business: "Mahall Balo ve Kongre Merkezi", category: "dugun-salonu", districts: ["melikgazi"], capacity: 2000, pricePerGuest: 800, about: "Çok büyük kapasiteli balo ve kongre merkezi. Yüksek tavanlı salonlarıyla büyük düğün ve kurumsal davetler.", rating: 4.5, ratingCount: 24 },
+  { business: "Ottoman Paradise Kır Düğün Salonu", category: "kir-dugunu", districts: ["melikgazi"], capacity: 1000, pricePerGuest: 600, about: "Osmanlı temalı dekoruyla geniş kır düğünü alanı. Kalabalık davetlere uygun açık bahçe ve nikah alanı.", rating: 4.5, ratingCount: 12 },
+  { business: "Taş Bahçe Ziyafet Balo Salonu", category: "dugun-salonu", districts: ["melikgazi"], capacity: 700, pricePerGuest: 650, about: "Taş dokulu dekoru ve bahçe alanıyla hem kapalı balo hem açık ziyafet imkanı. Orta-büyük düğünler.", rating: 4.6, ratingCount: 12 },
+  { business: "Merve Deluxe Düğün & Kına Salonu", category: "kina-mekani", districts: ["melikgazi"], capacity: 400, pricePerGuest: 650, about: "Kına gecesi organizasyonları için deluxe dekorlu salon. Orta ölçekli kına ve nişan davetleri.", rating: 4.2, ratingCount: 13 },
+  { business: "Kayseri Sofrası Care Restaurant", category: "kir-dugunu", districts: ["incesu"], capacity: 1000, pricePerGuest: 850, about: "Restoran ve kır düğünü konseptini birleştiren, yeşillikler içinde geniş bahçe. Büyük gruplara uygun.", rating: 4.5, ratingCount: 15 },
+  { business: "Develi Çamlıca Kır Bahçesi", category: "kir-dugunu", districts: ["develi"], capacity: 1200, pricePerGuest: 550, about: "Develi'de çam ağaçları arasında geniş kır düğünü bahçesi. Doğayla iç içe açık hava davetler.", rating: 4.5, ratingCount: 14 },
+  { business: "Foto Yılmaz Sosyal Tesisleri", category: "dugun-salonu", districts: ["develi"], capacity: 875, pricePerGuest: 550, about: "Develi ilçe merkezinde geniş kapasiteli sosyal tesis ve düğün salonu. Yerel düğünler için pratik.", rating: 4.4, ratingCount: 16 },
+  { business: "AHM Sosyal Tesisleri", category: "dugun-salonu", districts: ["yahyali"], capacity: 1200, pricePerGuest: 550, about: "Yahyalı'da büyük kapasiteli düğün salonu ve sosyal tesis. İlçenin en geniş kapalı davet alanlarından.", rating: 4.4, ratingCount: 20 },
+  { business: "Karatay Han Butik Otel & Restaurant", category: "otel-dugunu", districts: ["pinarbasi"], capacity: 150, pricePerGuest: 500, about: "Pınarbaşı'nda tarihi kervansaray dokulu butik otel. Küçük/butik ölçekli otel düğünü ve davetler.", rating: 4.5, ratingCount: 12 },
+  { business: "Hacılar Belediyesi Düğün Salonu", category: "dugun-salonu", districts: ["hacilar"], capacity: 250, pricePerGuest: 500, about: "Hacılar'da orta ölçekli kapalı düğün salonu. Uygun fiyatlı, pratik yerel düğün ve davet mekanı.", rating: 4.3, ratingCount: 11 },
+  { business: "Tomarza Belediyesi Düğün Salonu", category: "dugun-salonu", districts: ["tomarza"], capacity: 450, pricePerGuest: 500, about: "Tomarza ilçe merkezinde belediyeye ait düğün salonu. Orta ölçekli yerel düğünler için ekonomik.", rating: 4.2, ratingCount: 13 },
+  // --- Hizmetler ---
   { business: "Kayseri Kare Fotoğraf & Video", category: "fotograf-video", districts: DISTRICTS.map((d) => d.slug), minPrice: 12000, maxPrice: 45000, about: "Dış çekim, düğün günü klip ve albüm. Tüm Kayseri'ye hizmet.", showcase: true, rating: 4.8, ratingCount: 88 },
   { business: "Zarif Gelinlik Evi", category: "gelinlik", districts: ["kocasinan", "melikgazi", "talas"], minPrice: 8000, maxPrice: 60000, about: "Satış ve kiralık gelinlik, prova ve tadilat dahil.", rating: 4.5, ratingCount: 64 },
   { business: "Lezzet Durağı Catering", category: "catering", districts: ["talas", "melikgazi", "kocasinan", "incesu"], minPrice: 250, maxPrice: 1200, about: "Yöresel mantı ve yağlama dahil düğün catering menüleri (kişi başı).", rating: 4.6, ratingCount: 52 },
@@ -143,11 +171,13 @@ async function main() {
         responseMedianMin: 60 + Math.floor(rnd() * 300),
         districts: { create: f.districts.map((d) => ({ districtSlug: d })) },
         media: {
-          create: [0, 1, 2].map((n) => ({
-            url: `/placeholders/${f.category}.svg`,
-            alt: `${f.business} görsel ${n + 1}`,
-            sort: n,
-          })),
+          create: [
+            // Kapak: gerçek mekan fotoğrafı (public/venues/<slug>.webp)
+            { url: `/venues/${slugify(f.business)}.webp`, alt: `${f.business}`, sort: 0 },
+            // Galeri yedekleri (dekoratif)
+            { url: `/placeholders/${f.category}.svg`, alt: `${f.business} görsel 2`, sort: 1 },
+            { url: `/placeholders/${f.category}.svg`, alt: `${f.business} görsel 3`, sort: 2 },
+          ],
         },
         packages: {
           create: f.pricePerGuest
