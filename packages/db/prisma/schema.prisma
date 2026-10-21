@@ -87,6 +87,8 @@ model FirmProfile {
   ratingAvg         Float    @default(0)
   ratingCount       Int      @default(0)
   responseMedianMin Int? // medyan yanıt süresi (dk) — profilde görünür
+  hasVideo          Boolean  @default(false) // tanıtım videosu var mı
+  hasTour360        Boolean  @default(false) // 360° sanal tur var mı
   createdAt         DateTime @default(now())
 
   districts    FirmDistrict[]
@@ -98,9 +100,26 @@ model FirmProfile {
   reviews      Review[]
   favorites    Favorite[]
   threads      Thread[]       @relation("ThreadFirm")
+  campaigns    Campaign[]
 
   @@index([categorySlug])
   @@index([showcase])
+}
+
+/// Firma kampanyaları / fırsatlar (dugunbuketi "Kampanyalar" hub'ı benzeri)
+model Campaign {
+  id           String      @id @default(cuid())
+  firmId       String
+  firm         FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  title        String // "Hafta içi düğün fırsatı"
+  description  String
+  dealLabel    String // "120.000 TL'den" / "%20 indirim"
+  districtSlug String? // opsiyonel hedef ilçe
+  validUntil   DateTime?
+  active       Boolean     @default(true)
+  createdAt    DateTime    @default(now())
+
+  @@index([active])
 }
 
 model FirmDistrict {

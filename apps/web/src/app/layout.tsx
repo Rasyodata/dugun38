@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
+import { Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
+
+// Vogue arşivi benzeri editoryal Didone başlık yazı tipi (yüksek kontrastlı serif).
+const display = Bodoni_Moda({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-serif",
+});
 import { Footer } from "@/components/Footer";
 import { DemoSwitcher } from "@/components/DemoSwitcher";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -25,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="tr" className="h-full">
+    <html lang="tr" className={`h-full ${display.variable}`}>
       <body className="min-h-full flex flex-col bg-white">
         <Header />
         <main className="flex-1">{children}</main>

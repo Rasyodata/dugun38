@@ -2,6 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { hashPassword } from "../src/password.js";
 import {
   DISTRICTS,
+  CATEGORY_BY_SLUG,
   calcDeposit,
   calcCommission,
 } from "@dugun38/core";
@@ -169,6 +170,8 @@ async function main() {
         ratingAvg: f.rating,
         ratingCount: f.ratingCount,
         responseMedianMin: 60 + Math.floor(rnd() * 300),
+        hasVideo: (f.showcase ?? false) || i % 2 === 0,
+        hasTour360: CATEGORY_BY_SLUG[f.category]?.kind === "VENUE" && ((f.showcase ?? false) || f.ratingCount >= 25),
         districts: { create: f.districts.map((d) => ({ districtSlug: d })) },
         media: {
           create: [
@@ -312,9 +315,46 @@ async function main() {
     ],
   });
 
+  // Kampanyalar / Fırsatlar (dugunbuketi "Kampanyalar" hub'ı benzeri)
+  const byCat = (cat: string) => firmRecords.find((r) => r.seed.category === cat);
+  const campaignDefs: {
+    cat: string;
+    title: string;
+    description: string;
+    dealLabel: string;
+    district?: string;
+    days: number;
+  }[] = [
+    { cat: "dugun-salonu", title: "Hafta içi düğün fırsatı", description: "Pazartesi–Perşembe günleri rezervasyonlarda özel kişi başı fiyat. Sınırlı tarih.", dealLabel: "Kişi başı 650 TL'den", district: "kocasinan", days: 45 },
+    { cat: "havuz-basi", title: "Erken rezervasyon indirimi", description: "2026 sezonu havuz başı düğünlerinde erken rezervasyona özel indirim.", dealLabel: "%15 indirim", district: "melikgazi", days: 60 },
+    { cat: "otel-dugunu", title: "Kış düğünü paketi", description: "Kasım–Şubat düğünlerinde çifte ücretsiz balayı süiti ve pasta hediye.", dealLabel: "Ücretsiz süit + pasta", district: "kocasinan", days: 90 },
+    { cat: "tarihi-mekan", title: "Tarihi mekanda nikah + kına", description: "Nikah ve kına gecesini birlikte rezerve edene dekorasyon hediyeli paket.", dealLabel: "Dekor hediye", district: "incesu", days: 30 },
+    { cat: "kir-dugunu", title: "Dış çekim hediyeli kır düğünü", description: "Kır düğünü rezervasyonunda profesyonel dış çekim fotoğraf paketi hediye.", dealLabel: "Dış çekim hediye", district: "melikgazi", days: 40 },
+    { cat: "sosyal-tesis", title: "Toplu davet özel fiyatı", description: "200 kişi ve üzeri nişan/sünnet davetlerinde kurumsal özel fiyat.", dealLabel: "200+ kişi özel fiyat", district: "develi", days: 50 },
+  ];
+  let campaignCount = 0;
+  for (const c of campaignDefs) {
+    const fr = byCat(c.cat);
+    if (!fr) continue;
+    await prisma.campaign.create({
+      data: {
+        firmId: fr.id,
+        title: c.title,
+        description: c.description,
+        dealLabel: c.dealLabel,
+        districtSlug: c.district ?? null,
+        validUntil: new Date(Date.now() + c.days * 24 * 3600 * 1000),
+        active: true,
+      },
+    });
+    campaignCount++;
+  }
+  console.log(`  ✓ ${campaignCount} kampanya oluşturuldu`);
+
   const counts = {
     kullanıcı: await prisma.user.count(),
     firma: await prisma.firmProfile.count(),
+    kampanya: await prisma.campaign.count(),
     teklifTalebi: await prisma.offerRequest.count(),
     teklif: await prisma.offer.count(),
     rezervasyon: await prisma.reservation.count(),

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CATEGORY_BY_SLUG, DISTRICTS } from "@dugun38/core";
-import { searchFirms } from "@/lib/firms";
+import { searchFirms, firmCountsByDistrict } from "@/lib/firms";
 import { FirmCard } from "@/components/FirmCard";
 
 export async function generateMetadata({ params }: PageProps<"/kategori/[category]">): Promise<Metadata> {
@@ -21,7 +21,10 @@ export default async function KategoriPage({ params }: PageProps<"/kategori/[cat
   const cat = CATEGORY_BY_SLUG[category];
   if (!cat) notFound();
 
-  const { firms, total } = await searchFirms({ category: cat.slug, sort: "relevance", pageSize: 24 });
+  const [{ firms, total }, byDistrict] = await Promise.all([
+    searchFirms({ category: cat.slug, sort: "relevance", pageSize: 24 }),
+    firmCountsByDistrict(cat.slug),
+  ]);
 
   return (
     <div className="container-x py-8">
@@ -49,6 +52,7 @@ export default async function KategoriPage({ params }: PageProps<"/kategori/[cat
               className="badge bg-white border border-line hover:border-brand-400 text-ink"
             >
               {d.name}
+              {byDistrict[d.slug] ? <span className="ml-1 text-muted">({byDistrict[d.slug]})</span> : null}
             </Link>
           ))}
         </div>

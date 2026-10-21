@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { SERVICE_CATEGORIES } from "@dugun38/core";
+import { firmCountsByCategory } from "@/lib/firms";
 
 export const metadata = { title: "Hizmetler" };
 
-export default function HizmetlerPage() {
+export default async function HizmetlerPage() {
+  const byCat = await firmCountsByCategory();
   return (
     <div className="container-x py-10">
       <div className="max-w-3xl">
@@ -25,6 +27,7 @@ export default function HizmetlerPage() {
           >
             <div className="text-3xl">{c.icon}</div>
             <div className="text-sm font-medium mt-2 text-ink">{c.name}</div>
+            <div className="text-xs text-muted mt-1">{byCat[c.slug] ?? 0} firma</div>
           </Link>
         ))}
       </div>

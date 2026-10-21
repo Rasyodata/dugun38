@@ -27,6 +27,7 @@ export function Footer() {
           <h4 className="font-semibold text-sm mb-3">Düğün38</h4>
           <ul className="space-y-1.5 text-sm text-muted">
             <li><Link href="/teklif-al" className="hover:text-brand-700">Teklif Al</Link></li>
+            <li><Link href="/kampanyalar" className="hover:text-brand-700">Kampanyalar &amp; Fırsatlar</Link></li>
             <li><Link href="/asistan" className="hover:text-brand-700">AI Düğün Asistanı</Link></li>
             <li><Link href="/kesfet" className="hover:text-brand-700">Düğün Rehberi (Keşfet)</Link></li>
             <li><Link href="/kayit?rol=firma" className="hover:text-brand-700">Firma Olarak Katıl</Link></li>

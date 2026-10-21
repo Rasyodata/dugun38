@@ -20,6 +20,8 @@
   --color-gold: #c0953f;
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* Vogue arşivi benzeri editoryal Didone başlık ailesi (next/font → --font-serif). */
+  --font-display: var(--font-serif), Didot, "Bodoni MT", "Times New Roman", Georgia, serif;
 
   --radius: 0.75rem;
 }
@@ -38,6 +40,15 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+/* Vogue-benzeri editoryal başlık tipografisi: yüksek kontrastlı Didone serif. */
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+}
+h1 {
+  letter-spacing: -0.02em;
 }
 
 /* Yardımcı sınıflar */

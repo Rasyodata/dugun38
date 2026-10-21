@@ -44,6 +44,7 @@ export async function searchFirms(q: FirmQuery): Promise<{ firms: FirmCardData[]
       include: {
         districts: { select: { districtSlug: true } },
         media: { orderBy: { sort: "asc" }, take: 1 },
+        _count: { select: { media: true } },
       },
     }),
     prisma.firmProfile.count({ where }),
@@ -65,8 +66,33 @@ export async function searchFirms(q: FirmQuery): Promise<{ firms: FirmCardData[]
       responseMedianMin: r.responseMedianMin,
       districts: r.districts.map((d) => d.districtSlug),
       imageUrl: r.media[0]?.url ?? null,
+      hasVideo: r.hasVideo,
+      hasTour360: r.hasTour360,
+      photoCount: r._count.media,
     })),
   };
+}
+
+/** Kategoriye göre firma sayıları (SEO/landing — dugunbuketi "N Firma"). */
+export async function firmCountsByCategory(): Promise<Record<string, number>> {
+  const rows = await prisma.firmProfile.groupBy({
+    by: ["categorySlug"],
+    where: { user: { deletedAt: null } },
+    _count: true,
+  });
+  return Object.fromEntries(rows.map((r) => [r.categorySlug, r._count]));
+}
+
+/** İlçeye göre firma sayıları; opsiyonel kategori filtresi. */
+export async function firmCountsByDistrict(category?: string): Promise<Record<string, number>> {
+  const rows = await prisma.firmDistrict.groupBy({
+    by: ["districtSlug"],
+    where: {
+      firm: { user: { deletedAt: null }, ...(category ? { categorySlug: category } : {}) },
+    },
+    _count: true,
+  });
+  return Object.fromEntries(rows.map((r) => [r.districtSlug, r._count]));
 }
 
 /** Vitrin / öne çıkan firmalar (ana sayfa). */

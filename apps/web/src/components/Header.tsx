@@ -17,6 +17,7 @@ export async function Header() {
           <nav className="hidden md:flex items-center gap-5 text-sm font-medium text-muted">
             <Link href="/mekanlar" className="hover:text-brand-700">Mekanlar</Link>
             <Link href="/hizmetler" className="hover:text-brand-700">Hizmetler</Link>
+            <Link href="/kampanyalar" className="hover:text-brand-700">Kampanyalar</Link>
             <Link href="/teklif-al" className="hover:text-brand-700">Teklif Al</Link>
             <Link href="/asistan" className="hover:text-brand-700">AI Asistan</Link>
           </nav>

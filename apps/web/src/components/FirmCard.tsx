@@ -15,6 +15,9 @@ export interface FirmCardData {
   responseMedianMin: number | null;
   districts: string[];
   imageUrl: string | null;
+  hasVideo?: boolean;
+  hasTour360?: boolean;
+  photoCount?: number;
 }
 
 export function FirmCard({ firm }: { firm: FirmCardData }) {
@@ -34,6 +37,13 @@ export function FirmCard({ firm }: { firm: FirmCardData }) {
           <span className="badge absolute top-2 left-2 bg-gold text-white">⭐ Vitrin</span>
         )}
         <span className="badge absolute top-2 right-2 bg-white/90 text-ink">{cat?.name}</span>
+        {(firm.hasTour360 || firm.hasVideo || firm.photoCount) && (
+          <div className="absolute bottom-2 left-2 flex items-center gap-1">
+            {firm.hasTour360 && <span className="badge bg-black/65 text-white backdrop-blur-sm">360°</span>}
+            {firm.hasVideo && <span className="badge bg-black/65 text-white backdrop-blur-sm">▶ Video</span>}
+            {firm.photoCount ? <span className="badge bg-black/65 text-white backdrop-blur-sm">📷 {firm.photoCount}</span> : null}
+          </div>
+        )}
       </div>
       <div className="p-4">
         <div className="flex items-start justify-between gap-2">

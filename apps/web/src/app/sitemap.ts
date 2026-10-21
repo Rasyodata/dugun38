@@ -5,7 +5,7 @@ import { prisma } from "@dugun38/db";
 const BASE = process.env.SITE_URL ?? process.env.RENDER_EXTERNAL_URL ?? "https://dugun38.com";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticPages = ["", "/mekanlar", "/hizmetler", "/teklif-al", "/asistan", "/guvenli-kaparo", "/kvkk", "/gizlilik", "/cerez", "/kullanim-kosullari"].map(
+  const staticPages = ["", "/mekanlar", "/hizmetler", "/kampanyalar", "/teklif-al", "/asistan", "/guvenli-kaparo", "/kvkk", "/gizlilik", "/cerez", "/kullanim-kosullari"].map(
     (p) => ({ url: `${BASE}${p}`, changeFrequency: "weekly" as const, priority: p === "" ? 1 : 0.6 }),
   );
 
