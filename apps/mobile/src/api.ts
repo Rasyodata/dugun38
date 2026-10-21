@@ -100,6 +100,24 @@ export interface FirmRequestItem {
   myOffer: { price: number; status: string } | null;
 }
 
+export interface AdminDispute {
+  id: string; firmName: string; coupleName: string; depositAmount: number; reason: string | null;
+}
+export interface AdminOverview {
+  users: number; firms: number; requests: number; reservations: number;
+  gmv: number; commission: number; disputes: AdminDispute[];
+}
+export interface AdminLog {
+  id: string; action: string; ip: string | null; meta: string | null;
+  createdAt: string; userName: string | null; userRole: string | null;
+}
+export interface CoupleTools {
+  agenda: { id: string; title: string; done: boolean }[];
+  budget: { id: string; category: string; planned: number; actual: number; paid: boolean }[];
+  budgetTotals: { planned: number; actual: number };
+  guests: { total: number; attending: number };
+}
+
 export type ReservationStatus = "PENDING_DEPOSIT" | "DEPOSIT_HELD" | "COMPLETED" | "DISPUTED" | "REFUNDED" | "CANCELLED";
 export interface ReservationListItem {
   id: string;
@@ -185,6 +203,28 @@ export const api = {
   },
   sendOffer(requestId: string, price: number, message?: string) {
     return request<{ offerId: string }>("/api/offers", { method: "POST", body: JSON.stringify({ requestId, price, message }) });
+  },
+  // --- Çift paneli ---
+  listFavorites() {
+    return request<{ firms: FirmSummary[] }>("/api/favorites");
+  },
+  coupleTools() {
+    return request<CoupleTools>("/api/couple/tools");
+  },
+  toggleAgenda(id: string, done: boolean) {
+    return request<{ ok: boolean }>("/api/agenda/toggle", { method: "POST", body: JSON.stringify({ id, done }) });
+  },
+  // --- Admin paneli ---
+  adminOverview() {
+    return request<AdminOverview>("/api/admin/overview");
+  },
+  adminLogs(page = 1, action = "") {
+    const qs = new URLSearchParams({ page: String(page) });
+    if (action) qs.set("action", action);
+    return request<{ total: number; page: number; logs: AdminLog[] }>(`/api/admin/logs?${qs.toString()}`);
+  },
+  resolveDispute(id: string, decision: "release" | "refund") {
+    return request<{ ok: boolean }>(`/api/admin/disputes/${id}/resolve`, { method: "POST", body: JSON.stringify({ decision }) });
   },
   mediaUrl(path: string | null) {
     if (!path) return null;

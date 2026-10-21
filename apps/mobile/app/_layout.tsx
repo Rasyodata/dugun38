@@ -21,6 +21,10 @@ export default function RootLayout() {
           <Stack.Screen name="rezervasyon/[id]" options={{ title: "Rezervasyon" }} />
           <Stack.Screen name="firma-panel/index" options={{ title: "Firma Paneli" }} />
           <Stack.Screen name="firma-panel/talepler" options={{ title: "Gelen Talepler" }} />
+          <Stack.Screen name="admin-panel/index" options={{ title: "Yönetim Paneli" }} />
+          <Stack.Screen name="admin-panel/loglar" options={{ title: "Kullanıcı Logları" }} />
+          <Stack.Screen name="araclar" options={{ title: "Düğün Araçlarım" }} />
+          <Stack.Screen name="favoriler" options={{ title: "Favorilerim" }} />
           <Stack.Screen name="giris" options={{ title: "Giriş Yap", presentation: "modal" }} />
         </Stack>
       </AuthProvider>
