@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b89268"/>
+      <stop offset="0.5" stop-color="#8a6a42"/>
+      <stop offset="1" stop-color="#5c4428"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f1620" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1f1620" stop-opacity="0.42"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="250" rx="380" ry="300" fill="url(#glow)"/>
+  <text x="400" y="300" font-size="180" text-anchor="middle" dominant-baseline="central">🏰</text>
+  <rect width="800" height="600" fill="url(#vig)"/>
+  <text x="400" y="500" font-family="Georgia, serif" font-size="34" fill="#ffffff" fill-opacity="0.92" text-anchor="middle" letter-spacing="1">Tarihi Mekan</text>
+  <text x="400" y="538" font-family="Arial, sans-serif" font-size="18" fill="#ffffff" fill-opacity="0.65" text-anchor="middle" letter-spacing="3">DÜĞÜN38 · KAYSERİ</text>
+</svg>

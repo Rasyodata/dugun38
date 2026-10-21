@@ -43,7 +43,10 @@ export function FirmCard({ firm }: { firm: FirmCardData }) {
             <span className="text-muted font-normal">({firm.ratingCount})</span>
           </span>
         </div>
-        <p className="text-xs text-muted mt-1">{districtNames.join(", ")}</p>
+        <p className="text-xs text-muted mt-1">
+          {districtNames.join(", ")}
+          {firm.capacity ? <span className="ml-2">· 👥 {firm.capacity.toLocaleString("tr-TR")} kişiye kadar</span> : null}
+        </p>
         {firm.about && <p className="text-sm text-muted mt-2 line-clamp-2">{firm.about}</p>}
         <div className="flex items-center justify-between mt-3 pt-3 border-t border-line">
           <span className="text-sm font-semibold text-ink">

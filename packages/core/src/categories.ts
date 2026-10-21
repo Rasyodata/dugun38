@@ -21,6 +21,10 @@ export const CATEGORIES: Category[] = [
   { slug: "kina-mekani", name: "Kına Mekanı", plural: "Kına Mekanları", kind: "VENUE", icon: "🕯️", blurb: "kına gecesi mekanı" },
   { slug: "otel-dugunu", name: "Otel Düğünü", plural: "Otel Düğünü Mekanları", kind: "VENUE", icon: "🏨", blurb: "otelde düğün ve balo" },
   { slug: "nisan-mekani", name: "Nişan Mekanı", plural: "Nişan Mekanları", kind: "VENUE", icon: "💍", blurb: "nişan ve söz organizasyonu" },
+  { slug: "tarihi-mekan", name: "Tarihi Mekan", plural: "Tarihi Mekanlar", kind: "VENUE", icon: "🏰", blurb: "tarihi kervansaray ve konak düğünü" },
+  { slug: "havuz-basi", name: "Havuz Başı Düğün", plural: "Havuz Başı Düğün Mekanları", kind: "VENUE", icon: "🏊", blurb: "havuz başında açık hava düğünü" },
+  { slug: "sosyal-tesis", name: "Sosyal Tesis", plural: "Sosyal Tesisler", kind: "VENUE", icon: "🏢", blurb: "belediye ve kurum sosyal tesisi" },
+  { slug: "nikah-salonu", name: "Nikah Salonu", plural: "Nikah Salonları", kind: "VENUE", icon: "💒", blurb: "resmi nikah ve küçük tören salonu" },
   // --- Hizmetler ---
   { slug: "gelinlik", name: "Gelinlik", plural: "Gelinlik Mağazaları", kind: "SERVICE", icon: "👰", blurb: "gelinlik satış ve kiralama" },
   { slug: "damatlik", name: "Damatlık & Smokin", plural: "Damatlık & Smokin", kind: "SERVICE", icon: "🤵", blurb: "damatlık ve smokin" },
