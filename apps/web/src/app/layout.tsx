@@ -3,6 +3,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { DemoSwitcher } from "@/components/DemoSwitcher";
+import { CookieConsent } from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dugun38.com"),
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description: "Kayseri'de düğününüzü planlayın: teklif alın, karşılaştırın, Güvenli Kaparo ile rezervasyon yapın.",
     locale: "tr_TR",
     type: "website",
+    images: [{ url: "/og.svg", width: 1200, height: 630, alt: "Düğün38" }],
   },
 };
 
@@ -29,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="flex-1">{children}</main>
         <Footer />
         <DemoSwitcher />
+        <CookieConsent />
       </body>
     </html>
   );

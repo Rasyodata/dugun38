@@ -28,6 +28,7 @@ export function Footer() {
           <ul className="space-y-1.5 text-sm text-muted">
             <li><Link href="/teklif-al" className="hover:text-brand-700">Teklif Al</Link></li>
             <li><Link href="/asistan" className="hover:text-brand-700">AI Düğün Asistanı</Link></li>
+            <li><Link href="/kesfet" className="hover:text-brand-700">Düğün Rehberi (Keşfet)</Link></li>
             <li><Link href="/kayit?rol=firma" className="hover:text-brand-700">Firma Olarak Katıl</Link></li>
             <li><Link href="/guvenli-kaparo" className="hover:text-brand-700">Güvenli Kaparo Nedir?</Link></li>
           </ul>

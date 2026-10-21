@@ -1,8 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#9e5a2a"/><stop offset="1" stop-color="#9e5a2a99"/>
-  </linearGradient></defs>
-  <rect width="800" height="600" fill="url(#g)"/>
-  <text x="400" y="300" font-size="180" text-anchor="middle" dominant-baseline="central">🎪</text>
-  <text x="400" y="470" font-size="36" fill="#ffffff" font-family="sans-serif" text-anchor="middle" opacity="0.9">Organizasyon</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#af7850"/>
+      <stop offset="0.45" stop-color="#9e5a2a"/>
+      <stop offset="1" stop-color="#5c3418"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f1620" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1f1620" stop-opacity="0.38"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="301" cy="103" rx="360" ry="300" fill="url(#glow)"/>
+  <g><path d="M0 360 Q200 310 400 360 T800 360 V600 H0 Z" fill="#ffffff" opacity="0.050"/><path d="M0 430 Q200 380 400 430 T800 430 V600 H0 Z" fill="#ffffff" opacity="0.065"/><path d="M0 500 Q200 450 400 500 T800 500 V600 H0 Z" fill="#ffffff" opacity="0.080"/><path d="M0 570 Q200 520 400 570 T800 570 V600 H0 Z" fill="#ffffff" opacity="0.095"/></g>
+  <rect width="800" height="600" fill="url(#vig)"/>
+  <text x="400" y="265" font-size="190" text-anchor="middle" dominant-baseline="central" style="filter:drop-shadow(0 6px 10px rgba(0,0,0,0.25))">🎪</text>
+  <text x="400" y="470" font-size="40" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-weight="600" letter-spacing="1" text-anchor="middle" opacity="0.96" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,0.35))">Organizasyon</text>
+  <rect x="355" y="498" width="90" height="3" rx="1.5" fill="#ffffff" opacity="0.55"/>
 </svg>

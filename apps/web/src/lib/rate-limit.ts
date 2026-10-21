@@ -15,6 +15,13 @@ export interface RateLimitResult {
   retryAfterSec: number;
 }
 
+/** Sayaç artırmadan mevcut durumu kontrol eder (kilitli mi?). */
+export function peekLocked(key: string, limit: number): boolean {
+  const b = store.get(key);
+  if (!b || b.resetAt < Date.now()) return false;
+  return b.count >= limit;
+}
+
 export function rateLimit(key: string, limit: number, windowMs: number): RateLimitResult {
   const now = Date.now();
   const b = store.get(key);

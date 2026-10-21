@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c62c5a"/>
+      <stop offset="0.5" stop-color="#7a1536"/>
+      <stop offset="1" stop-color="#4d0f24"/>
+    </linearGradient>
+    <radialGradient id="hglow" cx="30%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#ff9ebf" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ff9ebf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hglow2" cx="80%" cy="80%" r="60%">
+      <stop offset="0" stop-color="#c0953f" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#c0953f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hvig" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4d0f24" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#4d0f24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#hg)"/>
+  <rect width="1600" height="600" fill="url(#hglow)"/>
+  <rect width="1600" height="600" fill="url(#hglow2)"/>
+  <g><polygon points="0,0 90,0 -140,600 -250,600" fill="#ffffff" opacity="0.025"/><polygon points="220,0 310,0 80,600 -30,600" fill="#ffffff" opacity="0.045"/><polygon points="440,0 530,0 300,600 190,600" fill="#ffffff" opacity="0.025"/><polygon points="660,0 750,0 520,600 410,600" fill="#ffffff" opacity="0.045"/><polygon points="880,0 970,0 740,600 630,600" fill="#ffffff" opacity="0.025"/><polygon points="1100,0 1190,0 960,600 850,600" fill="#ffffff" opacity="0.045"/><polygon points="1320,0 1410,0 1180,600 1070,600" fill="#ffffff" opacity="0.025"/><polygon points="1540,0 1630,0 1400,600 1290,600" fill="#ffffff" opacity="0.045"/></g>
+  <g><g opacity="0.10"><circle cx="222" cy="300" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/><circle cx="278" cy="300" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/></g><g opacity="0.10"><circle cx="1322" cy="320" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/><circle cx="1378" cy="320" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/></g><g opacity="0.10"><circle cx="772" cy="120" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/><circle cx="828" cy="120" r="52" fill="none" stroke="#f4c56b" stroke-width="5"/></g></g>
+  <g><g transform="translate(180,140) scale(0.50)" opacity="0.050"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(420,420) scale(0.72)" opacity="0.080"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(760,180) scale(0.94)" opacity="0.110"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(1040,460) scale(1.16)" opacity="0.050"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(1340,200) scale(0.50)" opacity="0.080"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(1480,420) scale(0.72)" opacity="0.110"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(640,500) scale(0.94)" opacity="0.050"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(980,120) scale(1.16)" opacity="0.080"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(1200,500) scale(0.50)" opacity="0.110"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g><g transform="translate(300,500) scale(0.72)" opacity="0.050"><path d="M0 8 C0 -4 -18 -8 -18 6 C-18 20 0 30 0 30 C0 30 18 20 18 6 C18 -8 0 -4 0 8 Z" fill="#ffffff"/></g></g>
+  <rect width="1600" height="600" fill="url(#hvig)"/>
+</svg>

@@ -1,17 +1,11 @@
-import { redirect } from "next/navigation";
 import { prisma } from "@dugun38/db";
 import { formatTRY } from "@dugun38/core";
-import { getCurrentUser } from "@/lib/auth";
 import { ResolveDisputeButtons } from "@/components/ResolveDisputeButtons";
 
-export const metadata = { title: "Yönetim Paneli" };
+export const metadata = { title: "Yönetim · Özet" };
 
-export default async function AdminPage() {
-  const user = await getCurrentUser();
-  if (!user) redirect("/giris");
-  if (user.role !== "ADMIN") redirect("/");
-
-  const [users, firms, requests, reservations, disputes, gmv] = await Promise.all([
+export default async function AdminOverviewPage() {
+  const [users, firms, requests, reservations, disputes, gmv, recentLogs] = await Promise.all([
     prisma.user.count({ where: { deletedAt: null } }),
     prisma.firmProfile.count(),
     prisma.offerRequest.count(),
@@ -21,21 +15,22 @@ export default async function AdminPage() {
       include: { firm: { select: { businessName: true } }, couple: { select: { name: true } } },
     }),
     prisma.reservation.aggregate({ where: { status: "COMPLETED" }, _sum: { totalAmount: true, commissionAmount: true } }),
+    prisma.auditLog.findMany({ orderBy: { createdAt: "desc" }, take: 8, include: { user: { select: { name: true, role: true } } } }),
   ]);
 
   return (
-    <div className="container-x py-8 max-w-4xl">
-      <h1 className="text-2xl font-bold text-ink">Yönetim Paneli</h1>
-
-      <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-6">
+    <div>
+      <h2 className="text-lg font-bold text-ink mb-3">Özet</h2>
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         <Stat label="Kullanıcı" value={String(users)} />
         <Stat label="Firma" value={String(firms)} />
-        <Stat label="Talep" value={String(requests)} />
+        <Stat label="Teklif talebi" value={String(requests)} />
         <Stat label="Rezervasyon" value={String(reservations)} />
-        <Stat label="Komisyon geliri" value={formatTRY(gmv._sum.commissionAmount ?? 0)} />
+        <Stat label="İşlem hacmi (GMV)" value={formatTRY(gmv._sum.totalAmount ?? 0)} />
+        <Stat label="Komisyon geliri" value={formatTRY(gmv._sum.commissionAmount ?? 0)} accent />
       </div>
 
-      <h2 className="text-lg font-bold text-ink mt-8 mb-3">İtirazlar ({disputes.length})</h2>
+      <h2 className="text-lg font-bold text-ink mt-8 mb-3">Bekleyen itirazlar ({disputes.length})</h2>
       {disputes.length === 0 ? (
         <p className="text-muted text-sm">Bekleyen itiraz yok. 🎉</p>
       ) : (
@@ -52,13 +47,23 @@ export default async function AdminPage() {
           ))}
         </div>
       )}
+
+      <h2 className="text-lg font-bold text-ink mt-8 mb-3">Son hareketler</h2>
+      <div className="card divide-y divide-line">
+        {recentLogs.map((l) => (
+          <div key={l.id} className="px-4 py-2.5 text-sm flex items-center justify-between gap-3">
+            <span className="text-ink"><code className="text-brand-700">{l.action}</code> — {l.user?.name ?? "sistem"}</span>
+            <span className="text-xs text-muted shrink-0">{new Date(l.createdAt).toLocaleString("tr-TR")}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({ label, value, accent }: { label: string; value: string; accent?: boolean }) {
   return (
-    <div className="card p-4">
+    <div className={`card p-4 ${accent ? "border-brand-300 bg-brand-50" : ""}`}>
       <p className="text-xl font-bold text-ink">{value}</p>
       <p className="text-xs text-muted mt-1">{label}</p>
     </div>
