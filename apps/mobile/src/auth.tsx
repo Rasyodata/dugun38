@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useCallback } from "react";
 import { api, setToken, type SessionUser } from "./api";
+import { registerForPush } from "./push";
 
 interface AuthState {
   user: SessionUser | null;
@@ -20,6 +21,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       const u = await api.login(email, password);
       setUser(u);
+      void registerForPush();
     } finally {
       setLoading(false);
     }
@@ -30,6 +32,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       const u = await api.demoLogin(role);
       setUser(u);
+      void registerForPush();
       return u;
     } finally {
       setLoading(false);

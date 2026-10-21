@@ -3,6 +3,7 @@ import { messageSchema } from "@dugun38/core";
 import { requireRole, audit } from "@/lib/auth";
 import { parseBody, ok, fail, handleAuthError } from "@/lib/api";
 import { rateLimit } from "@/lib/rate-limit";
+import { sendPush } from "@/lib/push";
 
 export async function POST(req: Request) {
   try {
@@ -27,6 +28,14 @@ export async function POST(req: Request) {
       data: { threadId: data.threadId, senderId: user.id, body: data.body },
     });
     await audit("message.send", user.id, { threadId: data.threadId });
+
+    // Karşı tarafa push bildirim (fire-and-forget)
+    const recipientId = isCouple ? thread.firm.userId : thread.coupleId;
+    void sendPush([recipientId], {
+      title: `${user.name}`,
+      body: data.body.slice(0, 120),
+      data: { type: "message", threadId: data.threadId },
+    });
 
     return ok({ id: msg.id, createdAt: msg.createdAt }, 201);
   } catch (e) {

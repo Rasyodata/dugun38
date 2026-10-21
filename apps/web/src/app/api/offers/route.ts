@@ -2,6 +2,8 @@ import { prisma } from "@dugun38/db";
 import { offerSchema } from "@dugun38/core";
 import { requireRole, audit } from "@/lib/auth";
 import { parseBody, ok, fail, handleAuthError } from "@/lib/api";
+import { sendPush } from "@/lib/push";
+import { formatTRY } from "@dugun38/core";
 
 // Firma, bir teklif talebine teklif verir.
 export async function POST(req: Request) {
@@ -46,6 +48,14 @@ export async function POST(req: Request) {
     });
 
     await audit("offer.create", user.id, { offerId: offer.id, requestId: data.requestId });
+
+    // Çifte push: yeni teklif geldi
+    void sendPush([request.coupleId], {
+      title: "Yeni teklif aldınız 📨",
+      body: `${firm.businessName} ${formatTRY(data.price)} teklif verdi.`,
+      data: { type: "offer", requestId: data.requestId },
+    });
+
     return ok({ offerId: offer.id }, 201);
   } catch (e) {
     return handleAuthError(e);

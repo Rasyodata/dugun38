@@ -103,6 +103,8 @@ async function main() {
       passwordHash: await hashPassword("cift1234"),
       kvkkAcceptedAt: new Date(),
       emailVerified: true,
+      partnerName: "Mehmet",
+      weddingDate: new Date(Date.now() + 150 * 24 * 3600 * 1000),
     },
   });
 

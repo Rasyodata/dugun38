@@ -249,6 +249,9 @@ export const api = {
   resolveDispute(id: string, decision: "release" | "refund") {
     return request<{ ok: boolean }>(`/api/admin/disputes/${id}/resolve`, { method: "POST", body: JSON.stringify({ decision }) });
   },
+  registerPushToken(token: string, platform: "ios" | "android") {
+    return request<{ ok: boolean }>("/api/push/register", { method: "POST", body: JSON.stringify({ token, platform }) });
+  },
   mediaUrl(path: string | null) {
     if (!path) return null;
     return path.startsWith("http") ? path : `${BASE}${path}`;

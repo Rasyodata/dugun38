@@ -2,6 +2,7 @@ import { prisma } from "@dugun38/db";
 import { calcDeposit, calcCommission } from "@dugun38/core";
 import { requireRole, audit } from "@/lib/auth";
 import { ok, fail, handleAuthError } from "@/lib/api";
+import { sendPush } from "@/lib/push";
 
 // Çift bir teklifi kabul eder → rezervasyon (kaparo bekleniyor) oluşur.
 export async function POST(_req: Request, { params }: { params: Promise<{ id: string }> }) {
@@ -11,7 +12,7 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
 
     const offer = await prisma.offer.findUnique({
       where: { id },
-      include: { request: true, reservation: true },
+      include: { request: true, reservation: true, firm: { select: { userId: true } } },
     });
     if (!offer) return fail("Teklif bulunamadı", 404);
     if (offer.request.coupleId !== user.id) return fail("Bu teklif size ait değil", 403);
@@ -42,6 +43,14 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
     });
 
     await audit("offer.accept", user.id, { offerId: offer.id, reservationId: reservation.id });
+
+    // Firmaya push: teklifiniz kabul edildi
+    void sendPush([offer.firm.userId], {
+      title: "Teklifiniz kabul edildi 🎉",
+      body: "Bir çift teklifinizi kabul etti. Rezervasyon oluşturuldu.",
+      data: { type: "reservation", reservationId: reservation.id },
+    });
+
     return ok({ reservationId: reservation.id, depositAmount: reservation.depositAmount }, 201);
   } catch (e) {
     return handleAuthError(e);

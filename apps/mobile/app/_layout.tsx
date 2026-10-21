@@ -1,10 +1,26 @@
-import { Stack } from "expo-router";
+import { useEffect } from "react";
+import { Stack, useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { AuthProvider } from "@/auth";
+import { addNotificationTapListener } from "@/push";
 import { colors } from "@/theme";
 
 export default function RootLayout() {
+  const router = useRouter();
+
+  // Bildirime dokununca ilgili ekrana götür
+  useEffect(() => {
+    const sub = addNotificationTapListener((data) => {
+      const type = data.type as string | undefined;
+      if (type === "message" && data.threadId) router.push(`/mesaj/${data.threadId}`);
+      else if (type === "offer") router.push("/tekliflerim");
+      else if (type === "request") router.push("/firma-panel/talepler");
+      else if (type === "reservation" && data.reservationId) router.push(`/rezervasyon/${data.reservationId}`);
+    });
+    return () => sub.remove();
+  }, [router]);
+
   return (
     <SafeAreaProvider>
       <AuthProvider>

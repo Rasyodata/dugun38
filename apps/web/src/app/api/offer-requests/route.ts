@@ -4,6 +4,7 @@ import { requireRole, audit } from "@/lib/auth";
 import { parseBody, ok, fail, handleAuthError, clientIp } from "@/lib/api";
 import { rateLimit } from "@/lib/rate-limit";
 import { notifyFirmsOfRequest } from "@/lib/notify";
+import { sendPush } from "@/lib/push";
 
 // Çiftin teklif talepleri + gelen teklifler (mobil "Tekliflerim" ekranı için).
 export async function GET() {
@@ -79,13 +80,19 @@ export async function POST(req: Request) {
         districts: { some: { districtSlug: data.district } },
         user: { deletedAt: null },
       },
-      select: { id: true, businessName: true, publicPhone: true },
+      select: { id: true, userId: true, businessName: true, publicPhone: true },
     });
 
     if (matched.length > 0) {
       await prisma.offerRequest.update({ where: { id: request.id }, data: { status: "MATCHED" } });
       // SMS bildirimi (test modunda — konsola loglar, gerçek sağlayıcı Faz 2'de)
       await notifyFirmsOfRequest(matched, request.id);
+      // Firmalara push: size uygun yeni talep
+      void sendPush(matched.map((m) => m.userId), {
+        title: "Yeni teklif talebi 🔔",
+        body: "Size uygun yeni bir talep var. Panelden teklif verin.",
+        data: { type: "request", requestId: request.id },
+      });
     }
 
     await audit("offer_request.create", user.id, { requestId: request.id, matched: matched.length });

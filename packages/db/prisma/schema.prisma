@@ -20,10 +20,13 @@ model User {
   passwordHash   String
   kvkkAcceptedAt DateTime?
   emailVerified  Boolean   @default(false)
+  weddingDate    DateTime? // çiftin düğün günü (geri sayım + kişiselleştirme)
+  partnerName    String? // eş adı (ör. "Mehmet")
   createdAt      DateTime  @default(now())
   deletedAt      DateTime? // KVKK: hesap silme (soft delete, anonimleştirme)
 
   sessions        Session[]
+  pushTokens      PushToken[]
   firm            FirmProfile?
   offerRequests   OfferRequest[]
   reservations    Reservation[]  @relation("CoupleReservations")
@@ -37,6 +40,18 @@ model User {
   guests          Guest[]
 
   @@index([role])
+}
+
+// Mobil push bildirim token'ları (Expo).
+model PushToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique // ExponentPushToken[...]
+  platform  String? // ios | android
+  createdAt DateTime @default(now())
+
+  @@index([userId])
 }
 
 model Session {
