@@ -118,6 +118,16 @@ export interface CoupleTools {
   guests: { total: number; attending: number };
 }
 
+export interface ThreadSummary {
+  id: string; otherParty: string; context: string; offerPrice: number;
+  hasReservation: boolean; unread: number; lastMessage: string | null; lastAt: string;
+}
+export interface ChatMessage { id: string; mine: boolean; body: string; createdAt: string }
+export interface ThreadDetail {
+  id: string; otherParty: string; offerPrice: number;
+  canRevealContact: boolean; firmPhone: string | null; messages: ChatMessage[];
+}
+
 export type ReservationStatus = "PENDING_DEPOSIT" | "DEPOSIT_HELD" | "COMPLETED" | "DISPUTED" | "REFUNDED" | "CANCELLED";
 export interface ReservationListItem {
   id: string;
@@ -213,6 +223,19 @@ export const api = {
   },
   toggleAgenda(id: string, done: boolean) {
     return request<{ ok: boolean }>("/api/agenda/toggle", { method: "POST", body: JSON.stringify({ id, done }) });
+  },
+  // --- Mesajlaşma ---
+  listThreads() {
+    return request<{ threads: ThreadSummary[] }>("/api/threads");
+  },
+  getThread(id: string) {
+    return request<ThreadDetail>(`/api/threads/${id}`);
+  },
+  sendMessage(threadId: string, body: string) {
+    return request<{ id: string; createdAt: string }>("/api/messages", {
+      method: "POST",
+      body: JSON.stringify({ threadId, body }),
+    });
   },
   // --- Admin paneli ---
   adminOverview() {

@@ -25,6 +25,8 @@ export default function RootLayout() {
           <Stack.Screen name="admin-panel/loglar" options={{ title: "Kullanıcı Logları" }} />
           <Stack.Screen name="araclar" options={{ title: "Düğün Araçlarım" }} />
           <Stack.Screen name="favoriler" options={{ title: "Favorilerim" }} />
+          <Stack.Screen name="mesajlar" options={{ title: "Mesajlar" }} />
+          <Stack.Screen name="mesaj/[id]" options={{ title: "Konuşma" }} />
           <Stack.Screen name="giris" options={{ title: "Giriş Yap", presentation: "modal" }} />
         </Stack>
       </AuthProvider>

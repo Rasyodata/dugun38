@@ -23,6 +23,7 @@ export default function HesabimScreen() {
             <>
               <Pressable style={styles.row} onPress={() => router.push("/firma-panel")}><Text style={styles.rowText}>🏢 Firma Paneli</Text></Pressable>
               <Pressable style={styles.row} onPress={() => router.push("/firma-panel/talepler")}><Text style={styles.rowText}>📋 Gelen Talepler</Text></Pressable>
+              <Pressable style={styles.row} onPress={() => router.push("/mesajlar")}><Text style={styles.rowText}>💬 Mesajlar</Text></Pressable>
               <Pressable style={styles.row} onPress={() => router.push("/")}><Text style={styles.rowText}>🔍 Rakipleri incele</Text></Pressable>
             </>
           ) : user.role === "ADMIN" ? (
@@ -34,6 +35,7 @@ export default function HesabimScreen() {
             <>
               <Pressable style={styles.row} onPress={() => router.push("/teklif")}><Text style={styles.rowText}>📨 Teklif Al</Text></Pressable>
               <Pressable style={styles.row} onPress={() => router.push("/tekliflerim")}><Text style={styles.rowText}>📋 Tekliflerim</Text></Pressable>
+              <Pressable style={styles.row} onPress={() => router.push("/mesajlar")}><Text style={styles.rowText}>💬 Mesajlar</Text></Pressable>
               <Pressable style={styles.row} onPress={() => router.push("/araclar")}><Text style={styles.rowText}>🛠️ Düğün Araçlarım</Text></Pressable>
               <Pressable style={styles.row} onPress={() => router.push("/favoriler")}><Text style={styles.rowText}>❤️ Favorilerim</Text></Pressable>
             </>

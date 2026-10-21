@@ -40,6 +40,11 @@ export function UserMenu({ name, role, dashboardHref }: { name: string; role: Ro
             <Link href={dashboardHref} className="block px-4 py-2 text-sm hover:bg-cream" onClick={() => setOpen(false)}>
               Panelim
             </Link>
+            {(role === "COUPLE" || role === "FIRM") && (
+              <Link href="/mesajlar" className="block px-4 py-2 text-sm hover:bg-cream" onClick={() => setOpen(false)}>
+                💬 Mesajlar
+              </Link>
+            )}
             {role === "COUPLE" && (
               <>
                 <Link href="/hesabim/tekliflerim" className="block px-4 py-2 text-sm hover:bg-cream" onClick={() => setOpen(false)}>Tekliflerim</Link>
