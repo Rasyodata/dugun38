@@ -2,6 +2,7 @@
 **/.next
 **/dist
 legacy
+apps/mobile
 .git
 *.log
 packages/db/prisma/dev.db

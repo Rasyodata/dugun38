@@ -1,39 +1,27 @@
-# Düğün38 web — tek imajda build + çalıştırma (monorepo).
-FROM node:20-slim AS base
+# Düğün38 web — tek aşamalı, sağlam build + çalıştırma (monorepo).
+FROM node:20-slim
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
-RUN corepack enable && corepack prepare pnpm@12.8.1 --activate
-# Prisma query engine için gerekli
-RUN apt-get update -y && apt-get install -y openssl ca-certificates && rm -rf /var/lib/apt/lists/*
-WORKDIR /app
-# Prisma CLI (db push) ve client için SQLite dosya yolu. Kalıcı disk buraya bağlanır.
-# PostgreSQL'e geçişte bu değeri Render'da override edin + schema provider'ı postgresql yapın.
+# Prisma CLI (db push) + client için SQLite yolu (kalıcı disk buraya bağlanır).
 ENV DATABASE_URL="file:/app/packages/db/prisma/dev.db"
 
-# --- bağımlılıklar ---
-FROM base AS deps
-COPY pnpm-workspace.yaml package.json .npmrc pnpm-lock.yaml ./
-COPY packages/core/package.json packages/core/
-COPY packages/db/package.json packages/db/
-COPY apps/web/package.json apps/web/
+RUN corepack enable && corepack prepare pnpm@12.8.1 --activate
+RUN apt-get update -y && apt-get install -y openssl ca-certificates && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+
+# Kaynakları kopyala (.dockerignore node_modules/.next/mobil/legacy'yi dışlar).
+COPY . .
+
+# Bağımlılıkları kur (devDependencies DAHİL — next build için typescript gerekli).
+# NODE_ENV burada production DEĞİL; yoksa devDeps atlanır ve build kırılır.
 RUN pnpm install --frozen-lockfile=false
 
-# --- build ---
-FROM base AS build
-# deps katmanından kurulu node_modules'ı al (hoisted layout: kök + paket seviyeleri).
-COPY --from=deps /app ./
-# Kaynakları ekle (.dockerignore node_modules'ı dışlar → kurulu modüller korunur).
-COPY . .
+# Prisma client + Next üretim derlemesi
 RUN pnpm --filter @dugun38/db generate
 RUN pnpm --filter web build
 
-# --- çalıştırma ---
-FROM base AS runner
-ENV NODE_ENV=production
-COPY --from=build /app ./
-# Render $PORT'u enjekte eder; Next start PORT env'ini kullanır.
 EXPOSE 3000
-# Şemayı uygula; yalnız SEED_ON_BOOT=1 ise demo veriyle doldur (yeniden başlatmada ezmez);
-# sonra sunucuyu başlat.
-CMD ["sh", "-c", "pnpm --filter @dugun38/db push && { [ \"$SEED_ON_BOOT\" = \"1\" ] && pnpm --filter @dugun38/db seed || true; } && pnpm --filter web start"]
+# Şemayı uygula; yalnız SEED_ON_BOOT=1 ise demo veriyle doldur; sonra sunucuyu başlat.
+# NODE_ENV production runtime'da ayarlanır (render.yaml ve burada).
+CMD ["sh", "-c", "export NODE_ENV=production && pnpm --filter @dugun38/db push && { [ \"$SEED_ON_BOOT\" = \"1\" ] && pnpm --filter @dugun38/db seed || true; } && pnpm --filter web start"]
