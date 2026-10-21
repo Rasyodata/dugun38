@@ -2,7 +2,8 @@
 FROM node:20-slim AS base
 ENV PNPM_HOME=/pnpm
 ENV PATH=$PNPM_HOME:$PATH
-RUN corepack enable
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable && corepack prepare pnpm@12.8.1 --activate
 # Prisma query engine için gerekli
 RUN apt-get update -y && apt-get install -y openssl ca-certificates && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
@@ -20,9 +21,9 @@ RUN pnpm install --frozen-lockfile=false
 
 # --- build ---
 FROM base AS build
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
-COPY --from=deps /app/packages ./packages
+# deps katmanından kurulu node_modules'ı al (hoisted layout: kök + paket seviyeleri).
+COPY --from=deps /app ./
+# Kaynakları ekle (.dockerignore node_modules'ı dışlar → kurulu modüller korunur).
 COPY . .
 RUN pnpm --filter @dugun38/db generate
 RUN pnpm --filter web build
