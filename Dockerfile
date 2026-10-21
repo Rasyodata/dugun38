@@ -17,8 +17,12 @@ COPY . .
 # NODE_ENV burada production DEĞİL; yoksa devDeps atlanır ve build kırılır.
 RUN pnpm install --frozen-lockfile=false
 
-# Prisma client + Next üretim derlemesi
-RUN pnpm --filter @dugun38/db generate
+# Prisma client üret + şemayı dev.db'ye uygula (tabloları oluştur).
+# Build anında sitemap.xml gibi rotalar DB'yi sorguladığı için tablolar var olmalı
+# (yoksa Prisma P2021 "table does not exist" ile build kırılır).
+RUN pnpm --filter @dugun38/db push
+
+# Next üretim derlemesi
 RUN pnpm --filter web build
 
 EXPOSE 3000

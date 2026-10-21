@@ -24,7 +24,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
   );
 
-  const firms = await prisma.firmProfile.findMany({ where: { user: { deletedAt: null } }, select: { slug: true } });
+  // DB henüz hazır değilse (örn. build anı) sitemap yine üretilsin — firmalar boş geçilir.
+  let firms: { slug: string }[] = [];
+  try {
+    firms = await prisma.firmProfile.findMany({ where: { user: { deletedAt: null } }, select: { slug: true } });
+  } catch {
+    firms = [];
+  }
   const firmPages = firms.map((f) => ({ url: `${BASE}/firma/${f.slug}`, changeFrequency: "weekly" as const, priority: 0.7 }));
 
   return [...staticPages, ...categoryPages, ...districtPages, ...firmPages];
