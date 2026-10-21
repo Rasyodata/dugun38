@@ -1,0 +1,28 @@
+# Render.com Blueprint — Düğün38
+# Kullanım: Render → New → Blueprint → bu repo'yu seç. render.yaml otomatik okunur.
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: dugun38
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free            # kalıcı disk için "starter" (ücretli) gerekir — aşağıdaki disk bloğunu açın
+    region: frankfurt     # Türkiye'ye en yakın Render bölgesi
+    healthCheckPath: /
+    autoDeploy: true      # repo'ya push edince otomatik yeniden yayınlar
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SEED_ON_BOOT
+        value: "1"        # ilk yayında demo veriyle doldurur. Gerçek veri girince "0" yapın.
+      - key: ALLOW_DEMO_LOGIN
+        value: "1"        # sunum için şifresiz demo giriş. Canlıya tam geçişte kaldırın/"0" yapın.
+    # SITE_URL ayarlamazsanız kod otomatik RENDER_EXTERNAL_URL'i kullanır (SEO/sitemap).
+    # --- KALICI VERİ (önerilen, ücretli starter plan) ---
+    # Free planda disk yoktur; SQLite her yeniden başlatmada sıfırlanır (demo için sorun değil).
+    # Kalıcı veri için plan: starter yapıp aşağıyı açın:
+    # disk:
+    #   name: dugun38-data
+    #   mountPath: /app/packages/db/prisma
+    #   sizeGB: 1

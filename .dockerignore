@@ -1,0 +1,8 @@
+**/node_modules
+**/.next
+**/dist
+legacy
+.git
+*.log
+packages/db/prisma/dev.db
+packages/db/prisma/dev.db-journal

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Düğün38 tasarım sistemi — romantik ama güven veren bordo/gül paleti. */
+@theme {
+  --color-brand-50: #fdf2f5;
+  --color-brand-100: #fce7ec;
+  --color-brand-200: #f9d0db;
+  --color-brand-300: #f3a9bd;
+  --color-brand-400: #ea7496;
+  --color-brand-500: #dc4772;
+  --color-brand-600: #c62c5a;
+  --color-brand-700: #a61d48;
+  --color-brand-800: #8a1b40;
+  --color-brand-900: #751a3a;
+
+  --color-ink: #1f1620;
+  --color-muted: #6b5b64;
+  --color-line: #ece4e8;
+  --color-cream: #fbf7f4;
+  --color-gold: #c0953f;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radius: 0.75rem;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: var(--color-ink);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Yardımcı sınıflar */
+.container-x {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  border-radius: var(--radius);
+  padding: 0.625rem 1.25rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--color-brand-600);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--color-brand-700);
+}
+.btn-outline {
+  border: 1px solid var(--color-line);
+  background: white;
+  color: var(--color-ink);
+}
+.btn-outline:hover {
+  border-color: var(--color-brand-400);
+  color: var(--color-brand-700);
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  background: white;
+  font-size: 0.95rem;
+}
+.input:focus {
+  outline: 2px solid var(--color-brand-300);
+  outline-offset: 0;
+  border-color: var(--color-brand-400);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+}

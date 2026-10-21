@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { DemoSwitcher } from "@/components/DemoSwitcher";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://dugun38.com"),
+  title: {
+    default: "Düğün38 — Kayseri'nin Düğün Platformu",
+    template: "%s | Düğün38",
+  },
+  description:
+    "Kayseri'nin 16 ilçesinde düğün salonu, kır düğünü, fotoğrafçı, gelinlik ve tüm düğün hizmetleri. Tek formla teklif al, Güvenli Kaparo ile güvenle rezervasyon yap.",
+  keywords: ["Kayseri düğün", "düğün salonu Kayseri", "kır düğünü Kayseri", "Düğün38"],
+  openGraph: {
+    title: "Düğün38 — Kayseri'nin Düğün Platformu",
+    description: "Kayseri'de düğününüzü planlayın: teklif alın, karşılaştırın, Güvenli Kaparo ile rezervasyon yapın.",
+    locale: "tr_TR",
+    type: "website",
+  },
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html lang="tr" className="h-full">
+      <body className="min-h-full flex flex-col bg-white">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+        <DemoSwitcher />
+      </body>
+    </html>
+  );
+}

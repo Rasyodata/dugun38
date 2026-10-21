@@ -1,0 +1,308 @@
+// Düğün38 veri modeli. SQLite (dev) — PostgreSQL'e taşımak için sadece
+// datasource provider + DATABASE_URL değişir. SQLite enum desteklemediği için
+// durum/rol alanları String'tir; geçerli değerler @dugun38/core sabitlerinden gelir.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String    @id @default(cuid())
+  role           String    @default("COUPLE") // COUPLE | FIRM | ADMIN
+  name           String
+  email          String    @unique
+  phone          String?
+  passwordHash   String
+  kvkkAcceptedAt DateTime?
+  emailVerified  Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+  deletedAt      DateTime? // KVKK: hesap silme (soft delete, anonimleştirme)
+
+  sessions        Session[]
+  firm            FirmProfile?
+  offerRequests   OfferRequest[]
+  reservations    Reservation[]  @relation("CoupleReservations")
+  reviews         Review[]
+  favorites       Favorite[]
+  messages        Message[]
+  threadsAsCouple Thread[]       @relation("ThreadCouple")
+  auditLogs       AuditLog[]
+  agendaItems     AgendaItem[]
+  budgetItems     BudgetItem[]
+  guests          Guest[]
+
+  @@index([role])
+}
+
+model Session {
+  id        String   @id // rastgele token (opaque)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+  ip        String?
+  userAgent String?
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model FirmProfile {
+  id                String   @id @default(cuid())
+  userId            String   @unique
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  businessName      String
+  slug              String   @unique
+  categorySlug      String // ana kategori
+  about             String?
+  minPrice          Int?
+  maxPrice          Int?
+  capacity          Int? // mekanlar için
+  pricePerGuest     Int? // mekanlar için kişi başı
+  address           String?
+  publicPhone       String? // yalnız rezervasyon sonrası paylaşılan gerçek telefon
+  verified          Boolean  @default(false)
+  showcase          Boolean  @default(false) // isteğe bağlı vitrin paketi
+  ratingAvg         Float    @default(0)
+  ratingCount       Int      @default(0)
+  responseMedianMin Int? // medyan yanıt süresi (dk) — profilde görünür
+  createdAt         DateTime @default(now())
+
+  districts    FirmDistrict[]
+  media        Media[]
+  packages     Package[]
+  blockedDates BlockedDate[]
+  offers       Offer[]
+  reservations Reservation[]
+  reviews      Review[]
+  favorites    Favorite[]
+  threads      Thread[]       @relation("ThreadFirm")
+
+  @@index([categorySlug])
+  @@index([showcase])
+}
+
+model FirmDistrict {
+  firmId       String
+  firm         FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  districtSlug String
+
+  @@id([firmId, districtSlug])
+  @@index([districtSlug])
+}
+
+model Media {
+  id     String @id @default(cuid())
+  firmId String
+  firm   FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  url    String
+  alt    String?
+  sort   Int    @default(0)
+}
+
+model Package {
+  id          String @id @default(cuid())
+  firmId      String
+  firm        FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  name        String
+  price       Int
+  description String?
+  sort        Int    @default(0)
+}
+
+model BlockedDate {
+  id     String   @id @default(cuid())
+  firmId String
+  firm   FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  date   DateTime
+
+  @@unique([firmId, date])
+}
+
+model OfferRequest {
+  id           String   @id @default(cuid())
+  coupleId     String
+  couple       User     @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  categorySlug String
+  districtSlug String
+  guests       Int?
+  eventDate    DateTime
+  budget       Int?
+  note         String?
+  status       String   @default("OPEN") // OPEN | MATCHED | CLOSED | EXPIRED
+  createdAt    DateTime @default(now())
+
+  offers Offer[]
+
+  @@index([categorySlug, districtSlug])
+  @@index([coupleId])
+  @@index([status])
+}
+
+model Offer {
+  id         String    @id @default(cuid())
+  requestId  String
+  request    OfferRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  firmId     String
+  firm       FirmProfile  @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  price      Int
+  message    String?
+  status     String    @default("SENT") // SENT | VIEWED | ACCEPTED | DECLINED | WITHDRAWN
+  validUntil DateTime?
+  createdAt  DateTime  @default(now())
+  viewedAt   DateTime?
+
+  thread      Thread?
+  reservation Reservation?
+
+  @@unique([requestId, firmId]) // firma bir talebe tek teklif verir
+  @@index([firmId])
+}
+
+model Thread {
+  id        String   @id @default(cuid())
+  offerId   String   @unique
+  offer     Offer    @relation(fields: [offerId], references: [id], onDelete: Cascade)
+  coupleId  String
+  couple    User     @relation("ThreadCouple", fields: [coupleId], references: [id], onDelete: Cascade)
+  firmId    String
+  firm      FirmProfile @relation("ThreadFirm", fields: [firmId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  messages Message[]
+
+  @@index([coupleId])
+  @@index([firmId])
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  threadId  String
+  thread    Thread   @relation(fields: [threadId], references: [id], onDelete: Cascade)
+  senderId  String
+  sender    User     @relation(fields: [senderId], references: [id], onDelete: Cascade)
+  body      String
+  createdAt DateTime @default(now())
+  readAt    DateTime?
+
+  @@index([threadId])
+}
+
+model Reservation {
+  id               String    @id @default(cuid())
+  offerId          String    @unique
+  offer            Offer     @relation(fields: [offerId], references: [id])
+  coupleId         String
+  couple           User      @relation("CoupleReservations", fields: [coupleId], references: [id], onDelete: Cascade)
+  firmId           String
+  firm             FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  totalAmount      Int
+  depositAmount    Int
+  commissionAmount Int
+  eventDate        DateTime
+  status           String    @default("PENDING_DEPOSIT") // bkz. core RESERVATION_STATUS
+  disputeReason    String?
+  createdAt        DateTime  @default(now())
+  completedAt      DateTime?
+
+  deposit Deposit?
+  review  Review?
+
+  @@index([coupleId])
+  @@index([firmId])
+  @@index([status])
+}
+
+// Güvenli Kaparo defteri — para lisanslı ödeme kuruluşunda (iyzico) bekler.
+model Deposit {
+  id            String    @id @default(cuid())
+  reservationId String    @unique
+  reservation   Reservation @relation(fields: [reservationId], references: [id], onDelete: Cascade)
+  amount        Int
+  status        String    @default("HELD") // HELD | RELEASED | REFUNDED
+  provider      String    @default("iyzico")
+  providerRef   String? // ödeme kuruluşu işlem referansı
+  heldAt        DateTime  @default(now())
+  releasedAt    DateTime?
+}
+
+model Review {
+  id            String   @id @default(cuid())
+  reservationId String   @unique // yalnız tamamlanmış rezervasyondan yorum
+  reservation   Reservation @relation(fields: [reservationId], references: [id], onDelete: Cascade)
+  firmId        String
+  firm          FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  coupleId      String
+  couple        User     @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  rating        Int // 1..5
+  body          String?
+  createdAt     DateTime @default(now())
+
+  @@index([firmId])
+}
+
+model Favorite {
+  coupleId  String
+  couple    User     @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  firmId    String
+  firm      FirmProfile @relation(fields: [firmId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@id([coupleId, firmId])
+}
+
+// --- Çift araçları ---
+model AgendaItem {
+  id        String    @id @default(cuid())
+  coupleId  String
+  couple    User      @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  title     String
+  done      Boolean   @default(false)
+  dueDate   DateTime?
+  sort      Int       @default(0)
+
+  @@index([coupleId])
+}
+
+model BudgetItem {
+  id       String @id @default(cuid())
+  coupleId String
+  couple   User   @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  category String
+  planned  Int    @default(0)
+  actual   Int    @default(0)
+  paid     Boolean @default(false)
+
+  @@index([coupleId])
+}
+
+model Guest {
+  id       String @id @default(cuid())
+  coupleId String
+  couple   User   @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  name     String
+  phone    String?
+  side     String? // gelin | damat
+  rsvp     String @default("PENDING") // PENDING | YES | NO | MAYBE
+  seats    Int    @default(1)
+
+  @@index([coupleId])
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action    String
+  meta      String? // JSON string
+  ip        String?
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+  @@index([action])
+}

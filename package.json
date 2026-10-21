@@ -1,0 +1,17 @@
+{
+  "name": "dugun38",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Düğün38 — Kayseri'ye özel düğün pazar yeri (monorepo)",
+  "type": "module",
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter @dugun38/db generate && pnpm --filter web build",
+    "db:generate": "pnpm --filter @dugun38/db generate",
+    "db:push": "pnpm --filter @dugun38/db push",
+    "db:seed": "pnpm --filter @dugun38/db seed",
+    "db:reset": "pnpm --filter @dugun38/db reset",
+    "setup": "pnpm install && pnpm db:push && pnpm db:seed"
+  }
+}
