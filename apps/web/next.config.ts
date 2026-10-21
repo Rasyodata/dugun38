@@ -26,7 +26,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@dugun38/core", "@dugun38/db"],
-  serverExternalPackages: ["@prisma/client", ".prisma/client"],
+  serverExternalPackages: ["@prisma/client", ".prisma/client", "sharp"],
   turbopack: {
     rules: {
       "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" },

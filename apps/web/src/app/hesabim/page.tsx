@@ -31,7 +31,10 @@ export default async function HesabimPage() {
     { href: "/hesabim/tekliflerim", icon: "📋", title: "Tekliflerim", desc: `${requestCount} talep · ${offerCount} teklif` },
     { href: "/mesajlar", icon: "💬", title: "Mesajlar", desc: unread > 0 ? `${unread} okunmamış mesaj` : "Firmalarla yazış" },
     { href: "/hesabim/araclar", icon: "🛠️", title: "Düğün Araçlarım", desc: `Plan %${progress} hazır` },
+    { href: "/hesabim/davetliler", icon: "👥", title: "Davetli Listem", desc: "LCV ve WhatsApp davet" },
+    { href: "/hesabim/dugun-sitem", icon: "💒", title: "Düğün Web Sitem", desc: "Paylaşılabilir davetiye" },
     { href: "/favoriler", icon: "❤️", title: "Favorilerim", desc: `${favCount} firma` },
+    { href: "/asistan", icon: "✨", title: "AI Asistan", desc: "Bütçe & plan önerisi" },
     { href: "/kesfet", icon: "📖", title: "Düğün Rehberi", desc: "Kayseri'ye özel ipuçları" },
   ];
 

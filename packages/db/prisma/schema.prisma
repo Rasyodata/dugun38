@@ -38,6 +38,7 @@ model User {
   agendaItems     AgendaItem[]
   budgetItems     BudgetItem[]
   guests          Guest[]
+  weddingSite     WeddingSite?
 
   @@index([role])
 }
@@ -307,6 +308,37 @@ model Guest {
   seats    Int    @default(1)
 
   @@index([coupleId])
+}
+
+// Çiftin paylaşılabilir düğün web sitesi (davetiye + LCV).
+model WeddingSite {
+  id        String   @id @default(cuid())
+  coupleId  String   @unique
+  couple    User     @relation(fields: [coupleId], references: [id], onDelete: Cascade)
+  slug      String   @unique
+  brideName String?
+  groomName String?
+  eventDate DateTime?
+  venueText String?
+  story     String?
+  coverUrl  String?
+  published Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  rsvps WeddingRsvp[]
+}
+
+model WeddingRsvp {
+  id        String   @id @default(cuid())
+  siteId    String
+  site      WeddingSite @relation(fields: [siteId], references: [id], onDelete: Cascade)
+  name      String
+  attending Boolean
+  guests    Int      @default(1)
+  note      String?
+  createdAt DateTime @default(now())
+
+  @@index([siteId])
 }
 
 model AuditLog {
