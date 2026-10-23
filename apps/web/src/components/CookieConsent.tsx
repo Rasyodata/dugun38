@@ -32,7 +32,7 @@ export function CookieConsent() {
           <div className="flex-1">
             <p className="text-sm font-semibold text-ink">🍪 Çerez kullanımı</p>
             <p className="text-sm text-muted mt-1">
-              Düğün38, oturumunuzu açık tutmak için zorunlu çerezler ve deneyimi geliştirmek için tercih/analitik
+              Duviora, oturumunuzu açık tutmak için zorunlu çerezler ve deneyimi geliştirmek için tercih/analitik
               çerezleri kullanır. Ayrıntılar için{" "}
               <Link href="/cerez" className="text-brand-700 hover:underline">Çerez Politikası</Link>.
             </p>

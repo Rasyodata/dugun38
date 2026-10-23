@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: PageProps<"/kategori/[categor
   if (!cat) return {};
   return {
     title: `Kayseri ${cat.plural}`,
-    description: `Kayseri'de ${cat.plural.toLowerCase()} — fiyatlar, yorumlar ve teklif. 16 ilçede ${cat.blurb} için en kapsamlı liste Düğün38'de.`,
+    description: `Kayseri'de ${cat.plural.toLowerCase()} — fiyatlar, yorumlar ve teklif. 16 ilçede ${cat.blurb} için en kapsamlı liste Duviora'de.`,
     alternates: { canonical: `/kategori/${cat.slug}` },
   };
 }

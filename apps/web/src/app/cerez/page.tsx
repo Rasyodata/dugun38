@@ -16,7 +16,7 @@ export default function CerezPage() {
         </div>
 
         <p className="text-muted leading-relaxed mt-4">
-          Düğün38, platformun çalışması ve deneyiminizin iyileştirilmesi için çerezler
+          Duviora, platformun çalışması ve deneyiminizin iyileştirilmesi için çerezler
           kullanır. Çerezler, tarayıcınıza kaydedilen küçük metin dosyalarıdır. Aşağıda
           kullandığımız çerez türlerini bulabilirsiniz.
         </p>

@@ -17,14 +17,14 @@ export default function KvkkPage() {
 
         <p className="text-muted leading-relaxed mt-4">
           6698 sayılı Kişisel Verilerin Korunması Kanunu (&ldquo;KVKK&rdquo;) kapsamında,
-          kişisel verilerinizin veri sorumlusu sıfatıyla Düğün38 tarafından nasıl
+          kişisel verilerinizin veri sorumlusu sıfatıyla Duviora tarafından nasıl
           işlendiği hakkında sizi bilgilendirmek isteriz.
         </p>
 
         <h2 className="text-xl font-bold text-ink mt-8 mb-2">1. Veri Sorumlusu</h2>
         <p className="text-muted leading-relaxed mt-2">
           Kişisel verileriniz, Kayseri&apos;nin 16 ilçesinde düğün hizmetlerini çiftler ile
-          firmaları buluşturan aracı platform olan <strong className="text-ink">Düğün38</strong> tarafından,
+          firmaları buluşturan aracı platform olan <strong className="text-ink">Duviora</strong> tarafından,
           veri sorumlusu sıfatıyla işlenmektedir.
         </p>
 

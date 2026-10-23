@@ -13,13 +13,13 @@ export default async function HomePage() {
       <section className="relative bg-gradient-to-b from-brand-50 to-white">
         <div className="container-x py-14 md:py-20">
           <div className="max-w-3xl">
-            <span className="badge bg-brand-100 text-brand-700 mb-4">Kayseri'nin düğün platformu · 16 ilçe</span>
+            <span className="badge bg-brand-100 text-brand-700 mb-4">Kayseri'nin düğün platformu · 16 ilçe · 286 firma</span>
             <h1 className="text-4xl md:text-5xl font-bold text-ink leading-tight">
-              Düğününüz Kayseri'de <span className="text-brand-600">buradan</span> başlar
+              Bir gün değil,<br />bir ömür hatırlanacak <span className="text-brand-600 italic">bir hikâye.</span>
             </h1>
             <p className="text-lg text-muted mt-4">
-              Salon, kır düğünü, fotoğrafçı, gelinlik ve tüm hizmetlerden tek formla teklif alın.
-              Yan yana karşılaştırın, <strong className="text-ink">Güvenli Kaparo</strong> ile güvenle rezerve edin.
+              En özel gününüzü içinize sinen şekilde planlayın. Kayseri'deki mekanları keşfedin, ilham alın,
+              tüm hizmetlerden tek formla teklif alın; <strong className="text-ink">Güvenli Kaparo</strong> ile güvenle rezerve edin.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export default async function HomePage() {
                 </Link>
               );
             })}
-            <Link href="/asistan" className="badge bg-brand-600 text-white">✨ AI Asistan ile planla</Link>
+            <Link href="/asistan" className="badge bg-brand-600 text-white">✨ Duviora AI ile planla</Link>
           </div>
         </div>
       </section>
@@ -71,10 +71,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Neden Düğün38 */}
+      {/* Neden Duviora */}
       <section className="bg-cream mt-12">
         <div className="container-x py-14">
-          <h2 className="text-2xl font-bold text-center text-ink">Neden Düğün38?</h2>
+          <h2 className="text-2xl font-bold text-center text-ink">Neden Duviora?</h2>
           <p className="text-muted text-center mt-2">Düğün.com'da olmayan üç şey bizde standart.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             <Feature icon="📨" title="Platform içi teklif" desc="Talebini bir kez gir; uygun firmalar fiyat versin, teklifleri yan yana karşılaştır. Telefonla uğraşma." />

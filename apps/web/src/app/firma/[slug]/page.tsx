@@ -104,7 +104,7 @@ export default async function FirmaPage({ params }: PageProps<"/firma/[slug]">) 
           <section className="mt-8">
             <h2 className="text-xl font-bold text-ink mb-1">Çift yorumları</h2>
             <p className="text-xs text-muted mb-3">
-              Sadece Düğün38 üzerinden rezervasyon yapıp hizmet alan çiftler yorum yazabilir.
+              Sadece Duviora üzerinden rezervasyon yapıp hizmet alan çiftler yorum yazabilir.
             </p>
             {firm.reviews.length === 0 ? (
               <p className="text-muted text-sm">Henüz yorum yok.</p>

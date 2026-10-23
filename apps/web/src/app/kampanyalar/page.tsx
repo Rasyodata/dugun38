@@ -6,7 +6,7 @@ import { CATEGORY_BY_SLUG, DISTRICT_BY_SLUG } from "@dugun38/core";
 export const metadata: Metadata = {
   title: "Kampanyalar & Fırsatlar",
   description:
-    "Kayseri'deki düğün salonları, kır düğünü mekanları ve düğün firmalarının güncel kampanya ve indirim fırsatları. Hafta içi düğün, erken rezervasyon ve hediyeli paketler Düğün38'de.",
+    "Kayseri'deki düğün salonları, kır düğünü mekanları ve düğün firmalarının güncel kampanya ve indirim fırsatları. Hafta içi düğün, erken rezervasyon ve hediyeli paketler Duviora'de.",
   alternates: { canonical: "/kampanyalar" },
 };
 

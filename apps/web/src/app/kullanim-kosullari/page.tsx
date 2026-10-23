@@ -16,14 +16,14 @@ export default function KullanimKosullariPage() {
         </div>
 
         <p className="text-muted leading-relaxed mt-4">
-          Düğün38 platformunu kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız.
+          Duviora platformunu kullanarak aşağıdaki koşulları kabul etmiş sayılırsınız.
           Platform, Kayseri&apos;nin 16 ilçesinde çiftler ile düğün hizmeti veren firmaları
           buluşturan bir pazar yeridir.
         </p>
 
         <h2 className="text-xl font-bold text-ink mt-8 mb-2">1. Platformun Rolü (Aracı)</h2>
         <p className="text-muted leading-relaxed mt-2">
-          Düğün38 yalnızca çiftler ile firmaları buluşturan bir <strong className="text-ink">aracı
+          Duviora yalnızca çiftler ile firmaları buluşturan bir <strong className="text-ink">aracı
           platformdur</strong>. Hizmetin bizzat sağlayıcısı değildir; mekan, catering,
           fotoğraf gibi hizmetler ilgili firmalar tarafından sunulur. Sözleşme çift ile
           firma arasında kurulur.
@@ -57,7 +57,7 @@ export default function KullanimKosullariPage() {
 
         <h2 className="text-xl font-bold text-ink mt-8 mb-2">5. Komisyon</h2>
         <p className="text-muted leading-relaxed mt-2">
-          Firmalar için platform kullanımı ücretsiz profil ile başlar. Düğün38, yalnızca
+          Firmalar için platform kullanımı ücretsiz profil ile başlar. Duviora, yalnızca
           gerçekleşen rezervasyonlar üzerinden <strong className="text-ink">%2 komisyon</strong>{" "}
           alır. İsteğe bağlı vitrin paketi ile firmalar öne çıkarma hizmeti satın alabilir.
           Çiftlerden komisyon alınmaz.
@@ -65,7 +65,7 @@ export default function KullanimKosullariPage() {
 
         <h2 className="text-xl font-bold text-ink mt-8 mb-2">6. Sorumluluğun Reddi</h2>
         <p className="text-muted leading-relaxed mt-2">
-          Düğün38 aracı konumda olduğundan, firmaların sunduğu hizmetin kalitesi, ifası ve
+          Duviora aracı konumda olduğundan, firmaların sunduğu hizmetin kalitesi, ifası ve
           firma ile çift arasındaki sözleşmeden doğrudan sorumlu değildir. Uyuşmazlıklarda
           Güvenli Kaparo süreci kapsamında arabuluculuk sağlanır; itiraz hâlinde admin
           değerlendirme yapar. Güvenli Kaparo ayrıntıları için{" "}

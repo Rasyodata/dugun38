@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
-/* Düğün38 tasarım sistemi — romantik ama güven veren bordo/gül paleti. */
+/* Duviora tasarım sistemi — romantik ama güven veren bordo/gül paleti. */
 @theme {
-  --color-brand-50: #fdf2f5;
-  --color-brand-100: #fce7ec;
-  --color-brand-200: #f9d0db;
-  --color-brand-300: #f3a9bd;
-  --color-brand-400: #ea7496;
-  --color-brand-500: #dc4772;
-  --color-brand-600: #c62c5a;
-  --color-brand-700: #a61d48;
-  --color-brand-800: #8a1b40;
-  --color-brand-900: #751a3a;
+  /* DUVIORA paleti — Primary Rose #BB676D, Dark #984C54, Blush, Canvas, Forest */
+  --color-brand-50: #fff0ef;
+  --color-brand-100: #fbe0e0;
+  --color-brand-200: #f2c4c6;
+  --color-brand-300: #e2a0a4;
+  --color-brand-400: #d0858a;
+  --color-brand-500: #c27177;
+  --color-brand-600: #bb676d;
+  --color-brand-700: #984c54;
+  --color-brand-800: #7f3e46;
+  --color-brand-900: #6a343b;
 
-  --color-ink: #1f1620;
-  --color-muted: #6b5b64;
-  --color-line: #ece4e8;
-  --color-cream: #fbf7f4;
-  --color-gold: #c0953f;
+  --color-ink: #272522;
+  --color-muted: #817b75;
+  --color-line: #e9e1db;
+  --color-cream: #fbf8f3;
+  --color-gold: #dbaa4b;
+  --color-forest: #25382d;
 
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  /* Vogue arşivi benzeri editoryal Didone başlık ailesi (next/font → --font-serif). */
-  --font-display: var(--font-serif), Didot, "Bodoni MT", "Times New Roman", Georgia, serif;
+  /* DUVIORA editoryal başlık ailesi (next/font → --font-serif Playfair Display). */
+  --font-display: var(--font-serif), Georgia, "Times New Roman", serif;
 
   --radius: 0.75rem;
 }

@@ -84,7 +84,7 @@ export default async function InvitePage({
         }}
       >
         <p style={{ fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", opacity: 0.75 }}>
-          Düğün38 ile hazırlandı
+          Duviora ile hazırlandı
         </p>
 
         <div style={{ fontSize: "2.5rem", marginTop: "1.5rem" }}>💍</div>

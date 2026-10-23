@@ -77,7 +77,7 @@ export default async function HesabimPage() {
       )}
 
       <div className="mt-8 text-center">
-        <p className="text-sm text-muted">Düğün38 ailesi olarak en özel gününüzde yanınızdayız 💕</p>
+        <p className="text-sm text-muted">Duviora ailesi olarak en özel gününüzde yanınızdayız 💕</p>
         <Link href="/hesabim/ayarlar" className="text-xs text-muted hover:text-brand-700 mt-1 inline-block">Hesap ayarları ve KVKK →</Link>
       </div>
     </div>

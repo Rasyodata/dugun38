@@ -39,7 +39,7 @@ const RSVP_OPTIONS: Rsvp[] = ["PENDING", "YES", "MAYBE", "NO"];
 function waLink(phone: string, name: string) {
   const digits = phone.replace(/\D/g, "").replace(/^0+/, "");
   const number = digits.startsWith("90") ? digits : `90${digits}`;
-  const text = `Merhaba ${name}, düğünümüze davetlisiniz! 💍 Lütfen katılım durumunuzu bildirin. — Düğün38`;
+  const text = `Merhaba ${name}, düğünümüze davetlisiniz! 💍 Lütfen katılım durumunuzu bildirin. — Duviora`;
   return `https://wa.me/${number}?text=${encodeURIComponent(text)}`;
 }
 

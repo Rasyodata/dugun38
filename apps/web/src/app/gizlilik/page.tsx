@@ -16,7 +16,7 @@ export default function GizlilikPage() {
         </div>
 
         <p className="text-muted leading-relaxed mt-4">
-          Düğün38 olarak gizliliğinize önem veriyoruz. Bu politika, Kayseri&apos;nin 16
+          Duviora olarak gizliliğinize önem veriyoruz. Bu politika, Kayseri&apos;nin 16
           ilçesinde hizmet veren platformumuzu kullandığınızda hangi verileri topladığımızı
           ve bu verileri nasıl koruduğumuzu açıklar.
         </p>
@@ -41,7 +41,7 @@ export default function GizlilikPage() {
           Hizmetin sunulabilmesi için verilerinizi yalnızca gerekli ölçüde paylaşırız:
         </p>
         <ul className="list-disc pl-6 text-muted leading-relaxed mt-2 space-y-1">
-          <li><strong className="text-ink">Ödeme kuruluşu:</strong> Güvenli Kaparo işlemleri lisanslı ödeme kuruluşu (iyzico Pazaryeri) üzerinden yürütülür. Kart bilgileriniz Düğün38 sunucularında saklanmaz.</li>
+          <li><strong className="text-ink">Ödeme kuruluşu:</strong> Güvenli Kaparo işlemleri lisanslı ödeme kuruluşu (iyzico Pazaryeri) üzerinden yürütülür. Kart bilgileriniz Duviora sunucularında saklanmaz.</li>
           <li><strong className="text-ink">SMS sağlayıcı:</strong> Teklif ve rezervasyon bildirimleri için telefon numaranız SMS hizmet sağlayıcımızla paylaşılır.</li>
           <li><strong className="text-ink">Firmalar:</strong> Teklif talebinizi iletebilmek için ad, iletişim ve talep bilgileriniz ilgili firmaya aktarılır.</li>
         </ul>

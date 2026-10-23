@@ -96,7 +96,7 @@ async function generateIntro(input: AssistantInput, budget: BudgetLine[]): Promi
         thinking: { type: "adaptive" },
         output_config: { effort: "low" },
         system:
-          "Sen Düğün38'in sıcak, samimi AI düğün asistanısın. Kayseri'de düğün planlayan çiftlere kısa (2-3 cümle), içten, Türkçe bir karşılama ve tek bir pratik ipucu yaz. Abartma, gerçekçi ol. Emoji kullanabilirsin ama az.",
+          "Sen Duviora'in sıcak, samimi AI düğün asistanısın. Kayseri'de düğün planlayan çiftlere kısa (2-3 cümle), içten, Türkçe bir karşılama ve tek bir pratik ipucu yaz. Abartma, gerçekçi ol. Emoji kullanabilirsin ama az.",
         messages: [
           {
             role: "user",

@@ -19,7 +19,7 @@ export async function Header() {
             <Link href="/hizmetler" className="hover:text-brand-700">Hizmetler</Link>
             <Link href="/kampanyalar" className="hover:text-brand-700">Kampanyalar</Link>
             <Link href="/teklif-al" className="hover:text-brand-700">Teklif Al</Link>
-            <Link href="/asistan" className="hover:text-brand-700">AI Asistan</Link>
+            <Link href="/asistan" className="hover:text-brand-700">Duviora AI</Link>
           </nav>
         </div>
 

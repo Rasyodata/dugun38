@@ -64,7 +64,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Bütçeyi korumanın yolu" },
       {
         type: "p",
-        text: "En sağlıklı yöntem, her kategoride en az üç firmadan teklif alıp karşılaştırmak. Düğün38 üzerinden tek formla birden fazla firmaya ulaşabilir, Güvenli Kaparo ile ödemelerinizi güvence altına alabilirsiniz.",
+        text: "En sağlıklı yöntem, her kategoride en az üç firmadan teklif alıp karşılaştırmak. Duviora üzerinden tek formla birden fazla firmaya ulaşabilir, Güvenli Kaparo ile ödemelerinizi güvence altına alabilirsiniz.",
       },
     ],
   },
@@ -105,7 +105,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Erciyes'te kış düğünü için mekan ve fotoğrafçı seçiminde Düğün38'den teklif alarak başlayabilirsiniz.",
+        text: "Erciyes'te kış düğünü için mekan ve fotoğrafçı seçiminde Duviora'den teklif alarak başlayabilirsiniz.",
       },
     ],
   },
@@ -145,7 +145,7 @@ export const ARTICLES: Article[] = [
       { type: "h2", text: "Modern dokunuşlar" },
       {
         type: "p",
-        text: "Günümüzde çiftler geleneği korurken kına tepsisi süslemeleri, el yapımı mumlar ve tematik dekorlarla kişisel dokunuşlar ekliyor. Kayseri'deki kına mekanlarını karşılaştırmak için Düğün38'den teklif alabilirsiniz.",
+        text: "Günümüzde çiftler geleneği korurken kına tepsisi süslemeleri, el yapımı mumlar ve tematik dekorlarla kişisel dokunuşlar ekliyor. Kayseri'deki kına mekanlarını karşılaştırmak için Duviora'den teklif alabilirsiniz.",
       },
     ],
   },
@@ -234,7 +234,7 @@ export const ARTICLES: Article[] = [
       { type: "li", text: "Canlı istasyonlu zengin menü: kişi başı ~600-700₺." },
       {
         type: "p",
-        text: "Catering firmalarından karşılaştırmalı teklif almak için Düğün38'i kullanabilir, menüyü konuk sayınıza göre birlikte planlayabilirsiniz.",
+        text: "Catering firmalarından karşılaştırmalı teklif almak için Duviora'i kullanabilir, menüyü konuk sayınıza göre birlikte planlayabilirsiniz.",
       },
     ],
   },
@@ -279,7 +279,7 @@ export const ARTICLES: Article[] = [
       { type: "li", text: "Yanınıza en fazla 1-2 kişi alın; çok kalabalık fikir kararınızı zorlaştırır." },
       {
         type: "p",
-        text: "Kayseri'deki gelinlik mağazalarını karşılaştırmak ve prova randevusu için Düğün38 üzerinden teklif alabilirsiniz.",
+        text: "Kayseri'deki gelinlik mağazalarını karşılaştırmak ve prova randevusu için Duviora üzerinden teklif alabilirsiniz.",
       },
     ],
   },

@@ -29,7 +29,7 @@ export default function GuvenliKaparoPage() {
   return (
     <div className="container-x py-10">
       <div className="max-w-3xl">
-        <span className="badge bg-brand-50 text-brand-700 mb-4">Düğün38&apos;e özel</span>
+        <span className="badge bg-brand-50 text-brand-700 mb-4">Duviora&apos;e özel</span>
         <h1 className="text-3xl font-bold text-ink">Güvenli Kaparo Nedir?</h1>
         <p className="text-muted leading-relaxed mt-2">
           Güvenli Kaparo, ödediğiniz kaparonun hizmeti alana kadar lisanslı bir ödeme
@@ -70,7 +70,7 @@ export default function GuvenliKaparoPage() {
           <h2 className="text-xl font-bold text-ink mb-2">Düğün.com&apos;da bu yok</h2>
           <p className="text-muted leading-relaxed mt-2">
             Diğer platformlar yalnızca sizi firmayla buluşturur; ödeme ve kaparo güvenliği
-            tamamen sizin riskinizdedir. Düğün38, <strong className="text-ink">Güvenli
+            tamamen sizin riskinizdedir. Duviora, <strong className="text-ink">Güvenli
             Kaparo</strong> ile paranızı hizmeti alana kadar koruyan Kayseri&apos;deki tek
             platformdur.
           </p>

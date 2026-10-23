@@ -14,7 +14,7 @@ export async function notifyFirmsOfRequest(firms: NotifyTarget[], requestId: str
   for (const f of firms) {
     await sendSms(
       f.publicPhone,
-      `Düğün38: Yeni bir teklif talebiniz var. Panelden görüntüleyip teklif verin. (Talep #${requestId.slice(-6)})`,
+      `Duviora: Yeni bir teklif talebiniz var. Panelden görüntüleyip teklif verin. (Talep #${requestId.slice(-6)})`,
     );
   }
 }

@@ -17,7 +17,7 @@ export async function generateMetadata({
   const article = ARTICLE_BY_SLUG[slug];
   if (!article) return {};
   return {
-    title: `${article.title} | Düğün38 Keşfet`,
+    title: `${article.title} | Duviora Keşfet`,
     description: article.excerpt,
     alternates: { canonical: `/kesfet/${article.slug}` },
   };

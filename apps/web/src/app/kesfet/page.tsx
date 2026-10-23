@@ -6,7 +6,7 @@ import { ARTICLES } from "./articles";
 export const metadata: Metadata = {
   title: "Düğün Rehberi (Keşfet) | Kayseri Düğün İpuçları",
   description:
-    "Kayseri'de düğün planlayanlar için rehber: bütçe, mekan, kına geleneği, yöresel menü ve gelinlik seçimi. Düğün38 Keşfet köşesinden faydalı içerikler.",
+    "Kayseri'de düğün planlayanlar için rehber: bütçe, mekan, kına geleneği, yöresel menü ve gelinlik seçimi. Duviora Keşfet köşesinden faydalı içerikler.",
   alternates: { canonical: "/kesfet" },
 };
 

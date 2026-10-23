@@ -1,0 +1,3472 @@
+[
+ {
+  "business": "Milena Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 15,
+  "capacity": 600,
+  "minPrice": 100000
+ },
+ {
+  "business": "İdeal Garden My Berra Düğün Salonu",
+  "category": "havuz-basi",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de havuz başı açık hava düğün ve davet alanı.",
+  "rating": 4.3,
+  "ratingCount": 22,
+  "capacity": 1200,
+  "pricePerGuest": 900
+ },
+ {
+  "business": "İdeal Moonlight",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 29,
+  "capacity": 1500,
+  "pricePerGuest": 1200
+ },
+ {
+  "business": "Tulpar Binicilik",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 36,
+  "capacity": 1800,
+  "pricePerGuest": 600
+ },
+ {
+  "business": "Erciyes Binicilik Balo & Davet Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 43,
+  "capacity": 800,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Sadabad Gold",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 50,
+  "capacity": 1000,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Armonia Deluxe",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 57,
+  "capacity": 1500,
+  "minPrice": 100000
+ },
+ {
+  "business": "Sadabad Ala",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 64,
+  "capacity": 350,
+  "minPrice": 160000
+ },
+ {
+  "business": "Alice Palazzo Düğün Etkinlik Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 71,
+  "capacity": 625,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Safa Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 78,
+  "capacity": 800,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Anatolia Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 85,
+  "capacity": 450,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Merve Deluxe Düğün & Kına Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 92,
+  "capacity": 450,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Vadi Royal Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 99,
+  "showcase": true,
+  "capacity": 450,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Şahane Ziyafet ve Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 106,
+  "capacity": 625,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Altındamla Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 113,
+  "capacity": 875,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Gala Deluxe Düğün & Davet",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 120,
+  "capacity": 625,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "As Golden Düğün ve Toplantı Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 14,
+  "capacity": 750,
+  "minPrice": 65000
+ },
+ {
+  "business": "Mahall Balo ve Kongre Merkezi",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 21,
+  "capacity": 2500,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Alice Wedding Center",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 28,
+  "capacity": 625,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Pera Deluxe",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 35,
+  "capacity": 875,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Safir Düğün Salonları",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 42,
+  "capacity": 1200,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Grand İldem Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 49,
+  "capacity": 625,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Asude Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 56,
+  "capacity": 350,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Mega Belsin Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 63,
+  "capacity": 625,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Valls Palace",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 70,
+  "capacity": 500,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "As Golden Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 77,
+  "showcase": true,
+  "capacity": 875,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Dorse Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 84,
+  "capacity": 875,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Kübra Paradise Balo ve Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 91,
+  "capacity": 450,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Gesi Gold Düğün ve Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 98,
+  "capacity": 450,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Okyanus Düğün ve Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 105,
+  "capacity": 700,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Yelken Düğün Salonları",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 112,
+  "capacity": 600,
+  "minPrice": 35000
+ },
+ {
+  "business": "Foto Yılmaz Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 119,
+  "capacity": 875,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Nişantaşı Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 13,
+  "capacity": 625,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Florya Deluxe Ziyafet ve Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 20,
+  "capacity": 700,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Şölen Düğün Ve Balo Salonları",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 27,
+  "capacity": 875,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Çırağan Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 34,
+  "capacity": 625,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Kapris Park Balo ve Kongre Merkezi",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 41,
+  "capacity": 1300,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Diva Premium Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 48,
+  "capacity": 600,
+  "pricePerGuest": 1000
+ },
+ {
+  "business": "Tomarza Belediyesi Düğün Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "tomarza"
+  ],
+  "about": "Tomarza'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 55,
+  "showcase": true,
+  "capacity": 450,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Gül Bahçe",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 62,
+  "capacity": 800,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Elit Ziyafet & Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 69,
+  "capacity": 875,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Beyaz Saray Deluxe Ziyafet & Balo Salonu",
+  "category": "tarihi-mekan",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de tarihi dokulu özel düğün ve davet mekanı.",
+  "rating": 4.7,
+  "ratingCount": 76,
+  "capacity": 1200,
+  "pricePerGuest": 1070
+ },
+ {
+  "business": "Friesian",
+  "category": "kir-dugunu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.8,
+  "ratingCount": 83,
+  "capacity": 1000,
+  "minPrice": 200000
+ },
+ {
+  "business": "Ottoman Paradise Kır Düğün Salonu",
+  "category": "kir-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.9,
+  "ratingCount": 90,
+  "capacity": 1000,
+  "pricePerGuest": 600
+ },
+ {
+  "business": "Dubai Palace & Terrace",
+  "category": "kir-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.1,
+  "ratingCount": 97,
+  "capacity": 1000,
+  "pricePerGuest": 690
+ },
+ {
+  "business": "My Berra Düğün ve Etkinlik Merkezi",
+  "category": "kir-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.2,
+  "ratingCount": 104,
+  "capacity": 1500,
+  "pricePerGuest": 850
+ },
+ {
+  "business": "Taş Bahçe Ziyafet Balo Salonu",
+  "category": "kir-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.3,
+  "ratingCount": 111,
+  "capacity": 700,
+  "pricePerGuest": 350
+ },
+ {
+  "business": "Kervansaray Kır Mekanı",
+  "category": "tarihi-mekan",
+  "districts": [
+   "incesu"
+  ],
+  "about": "İncesu'de tarihi dokulu özel düğün ve davet mekanı.",
+  "rating": 4.4,
+  "ratingCount": 118,
+  "capacity": 1500,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Hayal Evim Event Garden",
+  "category": "havuz-basi",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de havuz başı açık hava düğün ve davet alanı.",
+  "rating": 4.5,
+  "ratingCount": 12,
+  "capacity": 250,
+  "pricePerGuest": 900
+ },
+ {
+  "business": "Nehir Concept Organizasyon",
+  "category": "kir-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.6,
+  "ratingCount": 19,
+  "capacity": 150,
+  "minPrice": 6000
+ },
+ {
+  "business": "Burak At Çiftliği Ziyafet ve Balo Salonu",
+  "category": "kir-dugunu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.7,
+  "ratingCount": 26,
+  "capacity": 1500,
+  "pricePerGuest": 820
+ },
+ {
+  "business": "Işıltı Garden's",
+  "category": "havuz-basi",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de havuz başı açık hava düğün ve davet alanı.",
+  "rating": 4.8,
+  "ratingCount": 33,
+  "showcase": true,
+  "capacity": 1000,
+  "pricePerGuest": 980
+ },
+ {
+  "business": "Yelken Kır Düğün Salonları",
+  "category": "kir-dugunu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.9,
+  "ratingCount": 40,
+  "capacity": 600,
+  "pricePerGuest": 500
+ },
+ {
+  "business": "Köşk Pınar Düğün Salonu",
+  "category": "tarihi-mekan",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de tarihi dokulu özel düğün ve davet mekanı.",
+  "rating": 4.1,
+  "ratingCount": 47,
+  "capacity": 625,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Develi Çamlıca Kır Bahçesi",
+  "category": "kir-dugunu",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.2,
+  "ratingCount": 54,
+  "capacity": 1500,
+  "pricePerGuest": 740
+ },
+ {
+  "business": "Keyf Events & Wedding Planner",
+  "category": "kir-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.3,
+  "ratingCount": 61,
+  "capacity": 1500,
+  "pricePerGuest": 780
+ },
+ {
+  "business": "Sunolus Vineyard House",
+  "category": "kir-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.4,
+  "ratingCount": 68,
+  "capacity": 500,
+  "pricePerGuest": 820
+ },
+ {
+  "business": "Kayseri Sofrası",
+  "category": "kir-dugunu",
+  "districts": [
+   "incesu"
+  ],
+  "about": "İncesu'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.5,
+  "ratingCount": 75,
+  "capacity": 1500,
+  "pricePerGuest": 860
+ },
+ {
+  "business": "Şimendifer Garden",
+  "category": "havuz-basi",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de havuz başı açık hava düğün ve davet alanı.",
+  "rating": 4.6,
+  "ratingCount": 82,
+  "capacity": 1050,
+  "pricePerGuest": 900
+ },
+ {
+  "business": "Gül Bahçe Sosyal Tesisleri",
+  "category": "kir-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de doğayla iç içe açık hava kır düğünü ve bahçe mekanı.",
+  "rating": 4.7,
+  "ratingCount": 89,
+  "capacity": 2000,
+  "pricePerGuest": 700
+ },
+ {
+  "business": "Wyndham Grand Kayseri",
+  "category": "otel-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.8,
+  "ratingCount": 96,
+  "capacity": 850,
+  "pricePerGuest": 940
+ },
+ {
+  "business": "Crowne Plaza Kayseri",
+  "category": "otel-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.9,
+  "ratingCount": 103,
+  "capacity": 1500,
+  "pricePerGuest": 980
+ },
+ {
+  "business": "The Kayseri Loft Hotel",
+  "category": "otel-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.1,
+  "ratingCount": 110,
+  "capacity": 350,
+  "pricePerGuest": 1020
+ },
+ {
+  "business": "City One Hotel",
+  "category": "otel-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.2,
+  "ratingCount": 117,
+  "capacity": 250,
+  "pricePerGuest": 1060
+ },
+ {
+  "business": "Fier Otel",
+  "category": "otel-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.3,
+  "ratingCount": 11,
+  "showcase": true,
+  "capacity": 875,
+  "pricePerGuest": 1100
+ },
+ {
+  "business": "Serace Hotel",
+  "category": "otel-dugunu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.4,
+  "ratingCount": 18,
+  "capacity": 250,
+  "pricePerGuest": 900
+ },
+ {
+  "business": "Novotel",
+  "category": "otel-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.5,
+  "ratingCount": 25,
+  "capacity": 350,
+  "pricePerGuest": 940
+ },
+ {
+  "business": "Nüzhet Otel",
+  "category": "otel-dugunu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.6,
+  "ratingCount": 32,
+  "capacity": 800,
+  "pricePerGuest": 980
+ },
+ {
+  "business": "Kayseri Park Otel",
+  "category": "otel-dugunu",
+  "districts": [
+   "yahyali"
+  ],
+  "about": "Yahyalı'de otel konforunda balo salonu ve davet; konaklamalı düğün imkânı.",
+  "rating": 4.7,
+  "ratingCount": 39,
+  "capacity": 850,
+  "pricePerGuest": 1020
+ },
+ {
+  "business": "Kaytur Düğün Adası",
+  "category": "sosyal-tesis",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.8,
+  "ratingCount": 46,
+  "capacity": 500,
+  "pricePerGuest": 710
+ },
+ {
+  "business": "Mehmet Yücel Sosyal Tesisleri",
+  "category": "sosyal-tesis",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.9,
+  "ratingCount": 53,
+  "capacity": 1500,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Kayseri Şeker Fabrikası Düğün Salonu",
+  "category": "sosyal-tesis",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.1,
+  "ratingCount": 60,
+  "capacity": 900,
+  "pricePerGuest": 550
+ },
+ {
+  "business": "Kayseri Polisevi",
+  "category": "sosyal-tesis",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.2,
+  "ratingCount": 67,
+  "capacity": 450,
+  "pricePerGuest": 590
+ },
+ {
+  "business": "Kayseri Kocasinan Öğretmenevi",
+  "category": "sosyal-tesis",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.3,
+  "ratingCount": 74,
+  "capacity": 150,
+  "pricePerGuest": 630
+ },
+ {
+  "business": "Esma Hatun Düğün Salonu",
+  "category": "sosyal-tesis",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.4,
+  "ratingCount": 81,
+  "capacity": 450,
+  "pricePerGuest": 670
+ },
+ {
+  "business": "Elbiz Restaurant",
+  "category": "sosyal-tesis",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de geniş kapasiteli sosyal tesis ve düğün salonu.",
+  "rating": 4.5,
+  "ratingCount": 88,
+  "capacity": 625,
+  "pricePerGuest": 710
+ },
+ {
+  "business": "Aden Ziyafet ve Balo Salonu",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 95,
+  "capacity": 850,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Alice Deluxe Düğün ve Davet Salonları",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 102,
+  "showcase": true,
+  "capacity": 875,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Şirin Aqua Park",
+  "category": "havuz-basi",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de havuz başı açık hava düğün ve davet alanı.",
+  "rating": 4.8,
+  "ratingCount": 109,
+  "capacity": 1500,
+  "pricePerGuest": 900
+ },
+ {
+  "business": "Kaşık-la Ceremony",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 116,
+  "capacity": 450,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Tuana Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 10,
+  "capacity": 625,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Afilli Mutfak",
+  "category": "dugun-salonu",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Akkışla'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 17,
+  "capacity": 800,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Antep Eli Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 24,
+  "capacity": 150,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Alamet-i farika",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 31,
+  "capacity": 600,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Yeşil Döner Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "pinarbasi"
+  ],
+  "about": "Pınarbaşı'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 38,
+  "capacity": 75,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Terass Cafe & Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 45,
+  "capacity": 250,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Sultan Sofrası",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 52,
+  "capacity": 75,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Tiko",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 59,
+  "capacity": 800,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Hacı Steak House",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 66,
+  "capacity": 150,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Kemeraltı Develi Cıvıklısı",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 73,
+  "capacity": 150,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Perlaa Cafe Bistro",
+  "category": "dugun-salonu",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Akkışla'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 80,
+  "showcase": true,
+  "capacity": 650,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Lunch Box",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 87,
+  "capacity": 150,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Altınsaray Pöç Tandır",
+  "category": "tarihi-mekan",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de tarihi dokulu özel düğün ve davet mekanı.",
+  "rating": 4.4,
+  "ratingCount": 94,
+  "capacity": 75,
+  "pricePerGuest": 1070
+ },
+ {
+  "business": "Tostbaa Cafe",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 101,
+  "capacity": 250,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Yıldız Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 108,
+  "capacity": 150,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Shadow Cafe & Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 115,
+  "capacity": 75,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Kolcuoğlu Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 9,
+  "capacity": 650,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Konyalı Hacı Usta",
+  "category": "dugun-salonu",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Akkışla'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 16,
+  "capacity": 150,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Şahin Baba Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 23,
+  "capacity": 150,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Lavantes Bistro",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 30,
+  "capacity": 150,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Elmacıoğlu Gültepe Et Lokantası",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 37,
+  "capacity": 250,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Beyaz Saray Restaurant",
+  "category": "tarihi-mekan",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Akkışla'de tarihi dokulu özel düğün ve davet mekanı.",
+  "rating": 4.4,
+  "ratingCount": 44,
+  "capacity": 150,
+  "pricePerGuest": 990
+ },
+ {
+  "business": "Taş Mekan Et Lokantası",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 51,
+  "capacity": 150,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Kemal Koçak Et Lokantası",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 58,
+  "showcase": true,
+  "capacity": 450,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Gubate Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 65,
+  "capacity": 250,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Anadolu Sofrası",
+  "category": "dugun-salonu",
+  "districts": [
+   "develi"
+  ],
+  "about": "Develi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 72,
+  "capacity": 150,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Mangalcı Et Lokantası",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 79,
+  "capacity": 150,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Sini Kebap",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 86,
+  "capacity": 75,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Altıntabak Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 93,
+  "capacity": 250,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Murat Balık Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 100,
+  "capacity": 75,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Neşve Çay ve Kahve Evi",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 107,
+  "capacity": 150,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Çardak Cafe & Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.5,
+  "ratingCount": 114,
+  "capacity": 150,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Çemen's Gurme ve Mutfak",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.6,
+  "ratingCount": 8,
+  "capacity": 75,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Meşhur Çorbacı & Kokoreç",
+  "category": "dugun-salonu",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.7,
+  "ratingCount": 15,
+  "capacity": 150,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Şahin Baba Çorba & Izgara",
+  "category": "dugun-salonu",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.8,
+  "ratingCount": 22,
+  "capacity": 150,
+  "pricePerGuest": 790
+ },
+ {
+  "business": "Kasap A Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.9,
+  "ratingCount": 29,
+  "capacity": 150,
+  "pricePerGuest": 830
+ },
+ {
+  "business": "Mavi Masa Bistro Cafe",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.1,
+  "ratingCount": 36,
+  "showcase": true,
+  "capacity": 750,
+  "pricePerGuest": 870
+ },
+ {
+  "business": "Osmanlı Kahvecisi",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.2,
+  "ratingCount": 43,
+  "capacity": 150,
+  "pricePerGuest": 910
+ },
+ {
+  "business": "Kasaba Cafe & Restaurant",
+  "category": "dugun-salonu",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.3,
+  "ratingCount": 50,
+  "capacity": 850,
+  "pricePerGuest": 950
+ },
+ {
+  "business": "Bolu Mangal Kayseri",
+  "category": "dugun-salonu",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Akkışla'de şık dekorlu kapalı düğün ve balo salonu; tören, yemek ve organizasyon bir arada.",
+  "rating": 4.4,
+  "ratingCount": 57,
+  "capacity": 75,
+  "pricePerGuest": 750
+ },
+ {
+  "business": "Moonlight Party House & Organizasyon",
+  "category": "nisan-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de söz, nişan ve davet mekanı.",
+  "rating": 4.5,
+  "ratingCount": 64,
+  "capacity": 230,
+  "pricePerGuest": 640
+ },
+ {
+  "business": "Rustik Parti Evi",
+  "category": "nisan-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de söz, nişan ve davet mekanı.",
+  "rating": 4.6,
+  "ratingCount": 71,
+  "capacity": 450,
+  "pricePerGuest": 680
+ },
+ {
+  "business": "Glamour Luxury Event",
+  "category": "nisan-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de söz, nişan ve davet mekanı.",
+  "rating": 4.7,
+  "ratingCount": 78,
+  "capacity": 100,
+  "pricePerGuest": 720
+ },
+ {
+  "business": "1453 Party House",
+  "category": "nisan-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de söz, nişan ve davet mekanı.",
+  "rating": 4.8,
+  "ratingCount": 85,
+  "capacity": 550,
+  "pricePerGuest": 760
+ },
+ {
+  "business": "Dream Party House",
+  "category": "nisan-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de söz, nişan ve davet mekanı.",
+  "rating": 4.9,
+  "ratingCount": 92,
+  "capacity": 70,
+  "pricePerGuest": 800
+ },
+ {
+  "business": "Anatolia Party House",
+  "category": "kina-mekani",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de kına gecesi ve özel davet mekanı.",
+  "rating": 4.1,
+  "ratingCount": 99,
+  "capacity": 300,
+  "pricePerGuest": 650
+ },
+ {
+  "business": "Şahin Tepesi Kır Bahçesi",
+  "category": "kina-mekani",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Melikgazi'de kına gecesi ve özel davet mekanı.",
+  "rating": 4.2,
+  "ratingCount": 106,
+  "capacity": 350,
+  "pricePerGuest": 690
+ },
+ {
+  "business": "Emek Düğün & Balo Salonu",
+  "category": "kina-mekani",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kocasinan'de kına gecesi ve özel davet mekanı.",
+  "rating": 4.3,
+  "ratingCount": 113,
+  "capacity": 625,
+  "pricePerGuest": 730
+ },
+ {
+  "business": "Diva Premium Kına Evi",
+  "category": "kina-mekani",
+  "districts": [
+   "talas"
+  ],
+  "about": "Talas'de kına gecesi ve özel davet mekanı.",
+  "rating": 4.4,
+  "ratingCount": 120,
+  "capacity": 75,
+  "minPrice": 45000
+ },
+ {
+  "business": "Fikriye Narin Gelinlik & Abiye",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.5,
+  "ratingCount": 14,
+  "showcase": true,
+  "minPrice": 12000,
+  "maxPrice": 21600
+ },
+ {
+  "business": "Şebnem Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.6,
+  "ratingCount": 21,
+  "minPrice": 12160,
+  "maxPrice": 50640
+ },
+ {
+  "business": "Henna Gelinlik / Kayseri",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.7,
+  "ratingCount": 28,
+  "minPrice": 16320,
+  "maxPrice": 60000
+ },
+ {
+  "business": "Neşe Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.8,
+  "ratingCount": 35,
+  "minPrice": 20480,
+  "maxPrice": 56880
+ },
+ {
+  "business": "Neşe Köse Bridal",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.9,
+  "ratingCount": 42,
+  "minPrice": 24640,
+  "maxPrice": 53760
+ },
+ {
+  "business": "White Angel",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.1,
+  "ratingCount": 49,
+  "minPrice": 8000,
+  "maxPrice": 50640
+ },
+ {
+  "business": "Yeşim Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.2,
+  "ratingCount": 56,
+  "minPrice": 12160,
+  "maxPrice": 60000
+ },
+ {
+  "business": "Elif Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.3,
+  "ratingCount": 63,
+  "minPrice": 16320,
+  "maxPrice": 56880
+ },
+ {
+  "business": "Özden Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.4,
+  "ratingCount": 70,
+  "minPrice": 20480,
+  "maxPrice": 53760
+ },
+ {
+  "business": "By Ali Gülcan Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.5,
+  "ratingCount": 77,
+  "minPrice": 24640,
+  "maxPrice": 50640
+ },
+ {
+  "business": "Seba Moda evi",
+  "category": "gelinlik",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.6,
+  "ratingCount": 84,
+  "minPrice": 8000,
+  "maxPrice": 60000
+ },
+ {
+  "business": "Eşsiz Wedding",
+  "category": "gelinlik",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.7,
+  "ratingCount": 91,
+  "minPrice": 12160,
+  "maxPrice": 56880
+ },
+ {
+  "business": "Valls Gelinlik",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.8,
+  "ratingCount": 98,
+  "minPrice": 16320,
+  "maxPrice": 53760
+ },
+ {
+  "business": "Ugimpol",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.9,
+  "ratingCount": 105,
+  "showcase": true,
+  "minPrice": 20480,
+  "maxPrice": 50640
+ },
+ {
+  "business": "Begonvil Moda Evi",
+  "category": "gelinlik",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.1,
+  "ratingCount": 112,
+  "minPrice": 24640,
+  "maxPrice": 60000
+ },
+ {
+  "business": "Piserro",
+  "category": "damatlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.2,
+  "ratingCount": 119,
+  "minPrice": 4500,
+  "maxPrice": 22830
+ },
+ {
+  "business": "Kiğılı",
+  "category": "damatlik",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.3,
+  "ratingCount": 13,
+  "minPrice": 6060,
+  "maxPrice": 21660
+ },
+ {
+  "business": "Sarar",
+  "category": "damatlik",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.4,
+  "ratingCount": 20,
+  "minPrice": 7620,
+  "maxPrice": 20490
+ },
+ {
+  "business": "Ramsey",
+  "category": "damatlik",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.5,
+  "ratingCount": 27,
+  "minPrice": 9180,
+  "maxPrice": 24000
+ },
+ {
+  "business": "Hatemoğlu",
+  "category": "damatlik",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.6,
+  "ratingCount": 34,
+  "minPrice": 10740,
+  "maxPrice": 22830
+ },
+ {
+  "business": "Kip",
+  "category": "damatlik",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de damatlık, smokin ve takım elbise; hazır ve özel dikim.",
+  "rating": 4.7,
+  "ratingCount": 41,
+  "minPrice": 4500,
+  "maxPrice": 21660
+ },
+ {
+  "business": "Aydoğan Ekici Fotoğraf Stüdyosu",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.8,
+  "ratingCount": 48,
+  "minPrice": 8000,
+  "maxPrice": 14400
+ },
+ {
+  "business": "Foto Mustafa",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.9,
+  "ratingCount": 55,
+  "minPrice": 9900,
+  "maxPrice": 17820
+ },
+ {
+  "business": "Fatoş Korkmaz Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.1,
+  "ratingCount": 62,
+  "minPrice": 20640,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Mia Wedding Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.2,
+  "ratingCount": 69,
+  "minPrice": 23520,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Paris Color",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.3,
+  "ratingCount": 76,
+  "minPrice": 12000,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Stüdyo Tek Ersin Korkut",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.4,
+  "ratingCount": 83,
+  "showcase": true,
+  "minPrice": 14880,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Stüdyo Ziya",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.5,
+  "ratingCount": 90,
+  "minPrice": 17760,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Jungle Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.6,
+  "ratingCount": 97,
+  "minPrice": 20640,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Foto Atak",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.7,
+  "ratingCount": 104,
+  "minPrice": 23520,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Fotojenik",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.8,
+  "ratingCount": 111,
+  "minPrice": 12000,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Gökhan Navruz",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.9,
+  "ratingCount": 118,
+  "minPrice": 13000,
+  "maxPrice": 23400
+ },
+ {
+  "business": "Stüdyo Carmen",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.1,
+  "ratingCount": 12,
+  "minPrice": 17760,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Enes Korkmazyürek Düğün Fotoğrafçısı",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.2,
+  "ratingCount": 19,
+  "minPrice": 20640,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Tayfun Okumuş Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.3,
+  "ratingCount": 26,
+  "minPrice": 23520,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Foto Taç Fehmi Karakaya",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.4,
+  "ratingCount": 33,
+  "minPrice": 12000,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Bekir Işık Düğün Fotoğrafçısı",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.5,
+  "ratingCount": 40,
+  "minPrice": 14880,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Foto Peker",
+  "category": "fotograf-video",
+  "districts": [
+   "pinarbasi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.6,
+  "ratingCount": 47,
+  "minPrice": 17760,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Yusuf Kılıç Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.7,
+  "ratingCount": 54,
+  "minPrice": 20640,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Eşsiz Film",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.8,
+  "ratingCount": 61,
+  "showcase": true,
+  "minPrice": 23520,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Burak Yıldırım Kapadokya",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.9,
+  "ratingCount": 68,
+  "minPrice": 12000,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Mehmet Dursun Photography",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.1,
+  "ratingCount": 75,
+  "minPrice": 14880,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Foto Yüksel",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.2,
+  "ratingCount": 82,
+  "minPrice": 17760,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Stüdyo Şahan",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.3,
+  "ratingCount": 89,
+  "minPrice": 20640,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Fi Produksiyon",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.4,
+  "ratingCount": 96,
+  "minPrice": 23520,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Yalçın Sezgin Fotoğraf Stüdyosu",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.5,
+  "ratingCount": 103,
+  "minPrice": 12000,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Süper Dijital",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.6,
+  "ratingCount": 110,
+  "minPrice": 14880,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Güneş Fotoğrafçılık Mustafa Güneş",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.7,
+  "ratingCount": 117,
+  "minPrice": 17760,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Foto Sırcan",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.8,
+  "ratingCount": 11,
+  "minPrice": 20640,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Bekir Temel Photo",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.9,
+  "ratingCount": 18,
+  "minPrice": 23520,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Foto Yılmaz",
+  "category": "fotograf-video",
+  "districts": [
+   "develi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.1,
+  "ratingCount": 25,
+  "minPrice": 12000,
+  "maxPrice": 48000
+ },
+ {
+  "business": "Kaya Film Wedding",
+  "category": "fotograf-video",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.2,
+  "ratingCount": 32,
+  "minPrice": 14880,
+  "maxPrice": 45840
+ },
+ {
+  "business": "Stüdyo Still",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.3,
+  "ratingCount": 39,
+  "showcase": true,
+  "minPrice": 17760,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Kapris Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.4,
+  "ratingCount": 46,
+  "minPrice": 88880,
+  "maxPrice": 211840
+ },
+ {
+  "business": "Baysak Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.5,
+  "ratingCount": 53,
+  "minPrice": 105840,
+  "maxPrice": 250000
+ },
+ {
+  "business": "Evva Organizasyon & Davet",
+  "category": "organizasyon",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.6,
+  "ratingCount": 60,
+  "minPrice": 38000,
+  "maxPrice": 237280
+ },
+ {
+  "business": "Madam Hayal Davet&Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.7,
+  "ratingCount": 67,
+  "minPrice": 54960,
+  "maxPrice": 224560
+ },
+ {
+  "business": "Extra Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.8,
+  "ratingCount": 74,
+  "minPrice": 71920,
+  "maxPrice": 211840
+ },
+ {
+  "business": "Ajans Kuzey",
+  "category": "organizasyon",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.9,
+  "ratingCount": 81,
+  "minPrice": 88880,
+  "maxPrice": 250000
+ },
+ {
+  "business": "Vizyon Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.1,
+  "ratingCount": 88,
+  "minPrice": 105840,
+  "maxPrice": 237280
+ },
+ {
+  "business": "Özge Yıldız Make Up Studıo",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.2,
+  "ratingCount": 95,
+  "minPrice": 3500,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Elit Kuaför",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.3,
+  "ratingCount": 102,
+  "minPrice": 4420,
+  "maxPrice": 12930
+ },
+ {
+  "business": "Kuaför Mevlüt",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.4,
+  "ratingCount": 109,
+  "minPrice": 5340,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Ali Osman",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.5,
+  "ratingCount": 116,
+  "minPrice": 6260,
+  "maxPrice": 14310
+ },
+ {
+  "business": "Hairstyle Canan Murat Duman",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.6,
+  "ratingCount": 10,
+  "minPrice": 7180,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Madmazel Bayan Kuaforü",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.7,
+  "ratingCount": 17,
+  "showcase": true,
+  "minPrice": 3500,
+  "maxPrice": 12930
+ },
+ {
+  "business": "Vip Venüs Güzellik Salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.8,
+  "ratingCount": 24,
+  "minPrice": 4420,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Royal Derm Güzellik Salonu & Spa",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.9,
+  "ratingCount": 31,
+  "minPrice": 5340,
+  "maxPrice": 14310
+ },
+ {
+  "business": "Makkas",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.1,
+  "ratingCount": 38,
+  "minPrice": 6260,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Kırık Makas Saç Tasarım",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.2,
+  "ratingCount": 45,
+  "minPrice": 7180,
+  "maxPrice": 12930
+ },
+ {
+  "business": "Nostalji Kuaför Hayrullah",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.3,
+  "ratingCount": 52,
+  "minPrice": 3500,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Vip Karizma",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.4,
+  "ratingCount": 59,
+  "minPrice": 4420,
+  "maxPrice": 14310
+ },
+ {
+  "business": "Oben Bayan Kuaförü",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.5,
+  "ratingCount": 66,
+  "minPrice": 5340,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Seda Bayer Makeup Studio",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.6,
+  "ratingCount": 73,
+  "minPrice": 6260,
+  "maxPrice": 12930
+ },
+ {
+  "business": "Şimal Güzellik Salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "talas"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.7,
+  "ratingCount": 80,
+  "minPrice": 7180,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Koket Kuaför",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.8,
+  "ratingCount": 87,
+  "minPrice": 3500,
+  "maxPrice": 14310
+ },
+ {
+  "business": "Esmeray Güzellik Salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.9,
+  "ratingCount": 94,
+  "minPrice": 4420,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Sinan Kuaför",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.1,
+  "ratingCount": 101,
+  "minPrice": 5340,
+  "maxPrice": 12930
+ },
+ {
+  "business": "Salon Selçuk",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.2,
+  "ratingCount": 108,
+  "showcase": true,
+  "minPrice": 6260,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Liparis Güzellik ve Zayıflama Salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.3,
+  "ratingCount": 115,
+  "minPrice": 7180,
+  "maxPrice": 14310
+ },
+ {
+  "business": "Essi Güzellik Estetik Kozmetik Eğitim",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.4,
+  "ratingCount": 9,
+  "minPrice": 3500,
+  "maxPrice": 13620
+ },
+ {
+  "business": "Mercan Güzellik Salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.5,
+  "ratingCount": 16,
+  "minPrice": 4420,
+  "maxPrice": 12930
+ },
+ {
+  "business": "dore & lame güzellik salonu",
+  "category": "kuafor-makyaj",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin saçı, makyaj ve güzellik hizmetleri.",
+  "rating": 4.6,
+  "ratingCount": 23,
+  "minPrice": 5340,
+  "maxPrice": 15000
+ },
+ {
+  "business": "Misspera",
+  "category": "organizasyon",
+  "districts": [
+   "talas"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.7,
+  "ratingCount": 30,
+  "minPrice": 5500,
+  "maxPrice": 9900
+ },
+ {
+  "business": "Chalet Event",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.8,
+  "ratingCount": 37,
+  "minPrice": 8000,
+  "maxPrice": 14400
+ },
+ {
+  "business": "Toll Garden",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.9,
+  "ratingCount": 44,
+  "minPrice": 38000,
+  "maxPrice": 211840
+ },
+ {
+  "business": "Rosa Concept",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.1,
+  "ratingCount": 51,
+  "minPrice": 54960,
+  "maxPrice": 250000
+ },
+ {
+  "business": "Gülhisar Pastaneleri",
+  "category": "pasta-tatli",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.2,
+  "ratingCount": 58,
+  "minPrice": 4896,
+  "maxPrice": 17064
+ },
+ {
+  "business": "Genç Star Pastaneleri",
+  "category": "pasta-tatli",
+  "districts": [
+   "talas"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.3,
+  "ratingCount": 65,
+  "minPrice": 6144,
+  "maxPrice": 16128
+ },
+ {
+  "business": "Hisar Pastanesi",
+  "category": "pasta-tatli",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.4,
+  "ratingCount": 72,
+  "minPrice": 7392,
+  "maxPrice": 15192
+ },
+ {
+  "business": "Akyel Pastaneleri",
+  "category": "pasta-tatli",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.5,
+  "ratingCount": 79,
+  "minPrice": 2400,
+  "maxPrice": 18000
+ },
+ {
+  "business": "Çamburç Pastaneleri",
+  "category": "pasta-tatli",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.6,
+  "ratingCount": 86,
+  "showcase": true,
+  "minPrice": 3648,
+  "maxPrice": 17064
+ },
+ {
+  "business": "kayseri divan",
+  "category": "pasta-tatli",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün pastası, yaş pasta ve özel gün tatlıları.",
+  "rating": 4.7,
+  "ratingCount": 93,
+  "minPrice": 4896,
+  "maxPrice": 16128
+ },
+ {
+  "business": "Berrak Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.8,
+  "ratingCount": 100,
+  "minPrice": 406,
+  "maxPrice": 783
+ },
+ {
+  "business": "Kalbim Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.9,
+  "ratingCount": 107,
+  "minPrice": 458,
+  "maxPrice": 900
+ },
+ {
+  "business": "Tadım Yemek ve Catering",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.1,
+  "ratingCount": 114,
+  "minPrice": 250,
+  "maxPrice": 861
+ },
+ {
+  "business": "Onur Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.2,
+  "ratingCount": 8,
+  "minPrice": 302,
+  "maxPrice": 822
+ },
+ {
+  "business": "Kemal Usta Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.3,
+  "ratingCount": 15,
+  "minPrice": 354,
+  "maxPrice": 783
+ },
+ {
+  "business": "Acıktım Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.4,
+  "ratingCount": 22,
+  "minPrice": 406,
+  "maxPrice": 900
+ },
+ {
+  "business": "Kösedağ Yemek Hizmetleri",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.5,
+  "ratingCount": 29,
+  "minPrice": 458,
+  "maxPrice": 861
+ },
+ {
+  "business": "Kartallar Yemek ve Catering",
+  "category": "catering",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve davet catering; kişi başı menü seçenekleri.",
+  "rating": 4.6,
+  "ratingCount": 36,
+  "minPrice": 250,
+  "maxPrice": 822
+ },
+ {
+  "business": "Nato Oto Kiralama",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.7,
+  "ratingCount": 43,
+  "minPrice": 6840,
+  "maxPrice": 23860
+ },
+ {
+  "business": "Sedef Rent A Car",
+  "category": "gelin-arabasi",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.8,
+  "ratingCount": 50,
+  "minPrice": 8680,
+  "maxPrice": 28000
+ },
+ {
+  "business": "Albin Rac",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.9,
+  "ratingCount": 57,
+  "minPrice": 10520,
+  "maxPrice": 26620
+ },
+ {
+  "business": "Akdoğan Oto Kiralama",
+  "category": "gelin-arabasi",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.1,
+  "ratingCount": 64,
+  "showcase": true,
+  "minPrice": 12360,
+  "maxPrice": 25240
+ },
+ {
+  "business": "Express Rent A Car",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.2,
+  "ratingCount": 71,
+  "minPrice": 5000,
+  "maxPrice": 23860
+ },
+ {
+  "business": "Vip Aracım",
+  "category": "gelin-arabasi",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.3,
+  "ratingCount": 78,
+  "minPrice": 6840,
+  "maxPrice": 28000
+ },
+ {
+  "business": "Carmen Rent A Car",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.4,
+  "ratingCount": 85,
+  "minPrice": 8680,
+  "maxPrice": 26620
+ },
+ {
+  "business": "derin dere araç kiralama",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.5,
+  "ratingCount": 92,
+  "minPrice": 10520,
+  "maxPrice": 25240
+ },
+ {
+  "business": "Alvis Oto Kiralama",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.6,
+  "ratingCount": 99,
+  "minPrice": 12360,
+  "maxPrice": 23860
+ },
+ {
+  "business": "Ak Rent A Car",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.7,
+  "ratingCount": 106,
+  "minPrice": 5000,
+  "maxPrice": 28000
+ },
+ {
+  "business": "Koçlar Rent A Car",
+  "category": "gelin-arabasi",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin arabası kiralama ve süsleme hizmeti.",
+  "rating": 4.8,
+  "ratingCount": 113,
+  "minPrice": 6840,
+  "maxPrice": 26620
+ },
+ {
+  "business": "enes davetiye",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.9,
+  "ratingCount": 120,
+  "minPrice": 3180,
+  "maxPrice": 10740
+ },
+ {
+  "business": "Medya Ruka",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.1,
+  "ratingCount": 14,
+  "minPrice": 4020,
+  "maxPrice": 10110
+ },
+ {
+  "business": "Gala Davetiye",
+  "category": "davetiye",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.2,
+  "ratingCount": 21,
+  "minPrice": 4860,
+  "maxPrice": 12000
+ },
+ {
+  "business": "Osmanlı Ajans",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.3,
+  "ratingCount": 28,
+  "minPrice": 1500,
+  "maxPrice": 11370
+ },
+ {
+  "business": "Önder Ofset",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.4,
+  "ratingCount": 35,
+  "minPrice": 2340,
+  "maxPrice": 10740
+ },
+ {
+  "business": "Dumlu Ofset",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.5,
+  "ratingCount": 42,
+  "showcase": true,
+  "minPrice": 3180,
+  "maxPrice": 10110
+ },
+ {
+  "business": "gurbay davetiye",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.6,
+  "ratingCount": 49,
+  "minPrice": 4020,
+  "maxPrice": 12000
+ },
+ {
+  "business": "Seda Matbaası",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.7,
+  "ratingCount": 56,
+  "minPrice": 4860,
+  "maxPrice": 11370
+ },
+ {
+  "business": "Erciyes Davetiye",
+  "category": "davetiye",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.8,
+  "ratingCount": 63,
+  "minPrice": 1500,
+  "maxPrice": 10740
+ },
+ {
+  "business": "bulut ofset",
+  "category": "davetiye",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.9,
+  "ratingCount": 70,
+  "minPrice": 2340,
+  "maxPrice": 10110
+ },
+ {
+  "business": "Hira Davetiye",
+  "category": "davetiye",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına davetiyeleri; özel tasarım baskı.",
+  "rating": 4.1,
+  "ratingCount": 77,
+  "minPrice": 3180,
+  "maxPrice": 12000
+ },
+ {
+  "business": "Çarşıbaşı",
+  "category": "nikah-sekeri",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de nikah şekeri ve özel gün hediyelikleri.",
+  "rating": 4.2,
+  "ratingCount": 84,
+  "minPrice": 21,
+  "maxPrice": 48
+ },
+ {
+  "business": "Jale Nikah Şekerleri",
+  "category": "nikah-sekeri",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de nikah şekeri ve özel gün hediyelikleri.",
+  "rating": 4.3,
+  "ratingCount": 91,
+  "minPrice": 24,
+  "maxPrice": 45
+ },
+ {
+  "business": "Sedef Şekerleri",
+  "category": "nikah-sekeri",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de nikah şekeri ve özel gün hediyelikleri.",
+  "rating": 4.4,
+  "ratingCount": 98,
+  "minPrice": 12,
+  "maxPrice": 43
+ },
+ {
+  "business": "Balgüneş Nikah Şekerleri",
+  "category": "nikah-sekeri",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de nikah şekeri ve özel gün hediyelikleri.",
+  "rating": 4.5,
+  "ratingCount": 105,
+  "minPrice": 15,
+  "maxPrice": 50
+ },
+ {
+  "business": "Yaşamsal sekerleme",
+  "category": "nikah-sekeri",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de nikah şekeri ve özel gün hediyelikleri.",
+  "rating": 4.6,
+  "ratingCount": 112,
+  "minPrice": 18,
+  "maxPrice": 48
+ },
+ {
+  "business": "Moda Çiçekcilik",
+  "category": "susleme-cicek",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.7,
+  "ratingCount": 119,
+  "minPrice": 19280,
+  "maxPrice": 49360
+ },
+ {
+  "business": "Kayseri Çiçekçilik",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.8,
+  "ratingCount": 13,
+  "minPrice": 23040,
+  "maxPrice": 46540
+ },
+ {
+  "business": "Vizyon Çiçekçilik",
+  "category": "susleme-cicek",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.9,
+  "ratingCount": 20,
+  "showcase": true,
+  "minPrice": 8000,
+  "maxPrice": 55000
+ },
+ {
+  "business": "Kayseri Eren Çiçek",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.1,
+  "ratingCount": 27,
+  "minPrice": 11760,
+  "maxPrice": 52180
+ },
+ {
+  "business": "Burcu Çiçek",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.2,
+  "ratingCount": 34,
+  "minPrice": 15520,
+  "maxPrice": 49360
+ },
+ {
+  "business": "Nur Çiçekçilik",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.3,
+  "ratingCount": 41,
+  "minPrice": 19280,
+  "maxPrice": 46540
+ },
+ {
+  "business": "Kayseri Çiçek Evi",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.4,
+  "ratingCount": 48,
+  "minPrice": 23040,
+  "maxPrice": 55000
+ },
+ {
+  "business": "Kayseri Çiçek Center",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.5,
+  "ratingCount": 55,
+  "minPrice": 8000,
+  "maxPrice": 52180
+ },
+ {
+  "business": "Hayal Çiçek",
+  "category": "susleme-cicek",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.6,
+  "ratingCount": 62,
+  "minPrice": 11760,
+  "maxPrice": 49360
+ },
+ {
+  "business": "Kayseri Çiçek",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.7,
+  "ratingCount": 69,
+  "minPrice": 15520,
+  "maxPrice": 46540
+ },
+ {
+  "business": "Kayseri Flora",
+  "category": "susleme-cicek",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.8,
+  "ratingCount": 76,
+  "minPrice": 19280,
+  "maxPrice": 55000
+ },
+ {
+  "business": "1 Demet Çiçek",
+  "category": "susleme-cicek",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.9,
+  "ratingCount": 83,
+  "minPrice": 23040,
+  "maxPrice": 52180
+ },
+ {
+  "business": "Gözde Çiçekçiniz",
+  "category": "susleme-cicek",
+  "districts": [
+   "kocasinan"
+  ],
+  "about": "Kayseri'de gelin buketi, araç ve mekan süsleme; çiçek ve dekor.",
+  "rating": 4.1,
+  "ratingCount": 90,
+  "minPrice": 8000,
+  "maxPrice": 49360
+ },
+ {
+  "business": "Cemre Kuyumculuk",
+  "category": "taki-pirlanta",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.2,
+  "ratingCount": 97,
+  "minPrice": 22480,
+  "maxPrice": 100920
+ },
+ {
+  "business": "Osmanlı Sarraf",
+  "category": "alyans",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de çift alyans ve evlilik yüzükleri.",
+  "rating": 4.3,
+  "ratingCount": 104,
+  "minPrice": 13920,
+  "maxPrice": 45000
+ },
+ {
+  "business": "Ertaç Sarraf",
+  "category": "taki-pirlanta",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.4,
+  "ratingCount": 111,
+  "showcase": true,
+  "minPrice": 39440,
+  "maxPrice": 113640
+ },
+ {
+  "business": "Uzunefe Sarraf",
+  "category": "alyans",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de çift alyans ve evlilik yüzükleri.",
+  "rating": 4.5,
+  "ratingCount": 118,
+  "minPrice": 19840,
+  "maxPrice": 40560
+ },
+ {
+  "business": "Somtaş Sarraf",
+  "category": "taki-pirlanta",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.6,
+  "ratingCount": 12,
+  "minPrice": 14000,
+  "maxPrice": 100920
+ },
+ {
+  "business": "Karakaş Kuyumculuk",
+  "category": "alyans",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de çift alyans ve evlilik yüzükleri.",
+  "rating": 4.7,
+  "ratingCount": 19,
+  "minPrice": 10960,
+  "maxPrice": 45000
+ },
+ {
+  "business": "Aris Kayseri",
+  "category": "taki-pirlanta",
+  "districts": [
+   "melikgazi",
+   "kocasinan",
+   "talas"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.8,
+  "ratingCount": 26,
+  "minPrice": 30960,
+  "maxPrice": 113640
+ },
+ {
+  "business": "Cihan Sarraf",
+  "category": "alyans",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de çift alyans ve evlilik yüzükleri.",
+  "rating": 4.9,
+  "ratingCount": 33,
+  "minPrice": 16880,
+  "maxPrice": 40560
+ },
+ {
+  "business": "Nisda Kuyumculuk",
+  "category": "taki-pirlanta",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.1,
+  "ratingCount": 40,
+  "minPrice": 47920,
+  "maxPrice": 100920
+ },
+ {
+  "business": "Özal Sarraf",
+  "category": "alyans",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de çift alyans ve evlilik yüzükleri.",
+  "rating": 4.2,
+  "ratingCount": 47,
+  "minPrice": 8000,
+  "maxPrice": 45000
+ },
+ {
+  "business": "Eyimli Mücevherat",
+  "category": "taki-pirlanta",
+  "districts": [
+   "akkisla"
+  ],
+  "about": "Kayseri'de söz, nişan ve düğün için takı ve pırlanta.",
+  "rating": 4.3,
+  "ratingCount": 54,
+  "minPrice": 22480,
+  "maxPrice": 113640
+ },
+ {
+  "business": "Stüdyo Demet",
+  "category": "fotograf-video",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.4,
+  "ratingCount": 61,
+  "minPrice": 17760,
+  "maxPrice": 43680
+ },
+ {
+  "business": "Rahle Rabia Fotoğrafçılık",
+  "category": "fotograf-video",
+  "districts": [
+   "talas"
+  ],
+  "about": "Kayseri'de düğün fotoğraf ve video çekimi; dış çekim ve albüm.",
+  "rating": 4.5,
+  "ratingCount": 68,
+  "minPrice": 20640,
+  "maxPrice": 41520
+ },
+ {
+  "business": "Nisanur Gelinlik Kayseri VIP",
+  "category": "gelinlik",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de gelinlik, abiye ve nişanlık; satış, kiralama ve özel dikim.",
+  "rating": 4.6,
+  "ratingCount": 75,
+  "minPrice": 24640,
+  "maxPrice": 60000
+ },
+ {
+  "business": "Nero Organizasyon",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.7,
+  "ratingCount": 82,
+  "minPrice": 38000,
+  "maxPrice": 237280
+ },
+ {
+  "business": "Avior Event",
+  "category": "organizasyon",
+  "districts": [
+   "melikgazi"
+  ],
+  "about": "Kayseri'de düğün, nişan ve kına organizasyonu; uçtan uca planlama.",
+  "rating": 4.8,
+  "ratingCount": 89,
+  "showcase": true,
+  "minPrice": 54960,
+  "maxPrice": 224560
+ }
+]
